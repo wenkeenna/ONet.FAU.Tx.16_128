@@ -1,0 +1,243 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx.16_128\\views\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|solutionrelative:onet.fau.tx.16_128\\views\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|f:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\fau_\u8026\u5408\u8BBE\u5907\\onet.fau.tx.16_128\\onet.fau.tx.16_128\\initialization\\visionprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|solutionrelative:onet.fau.tx.16_128\\initialization\\visionprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\DM.Foundation\\DM.UserManagement\\Services\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx.16_128\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|solutionrelative:onet.fau.tx.16_128\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx.16_128\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|solutionrelative:onet.fau.tx.16_128\\views\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx.16_128\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|solutionrelative:onet.fau.tx.16_128\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx.16_128\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|solutionrelative:onet.fau.tx.16_128\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139903BD-0D75-45B3-A8CF-7701A1A38543}|ONet.FAU.Tx16_128.Extension\\ONet.FAU.Tx16_128.Extension.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx16_128.extension\\services\\runtimecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139903BD-0D75-45B3-A8CF-7701A1A38543}|ONet.FAU.Tx16_128.Extension\\ONet.FAU.Tx16_128.Extension.csproj|solutionrelative:onet.fau.tx16_128.extension\\services\\runtimecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx.16_128\\initialization\\parameterinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|solutionrelative:onet.fau.tx.16_128\\initialization\\parameterinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx.16_128\\initialization\\motionsystemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|solutionrelative:onet.fau.tx.16_128\\initialization\\motionsystemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx.16_128\\initialization\\motionsysteminitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|solutionrelative:onet.fau.tx.16_128\\initialization\\motionsysteminitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx.16_128\\initialization\\globalconfigservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5A4EA55-A05E-4919-AA67-1379EAA45AB4}|ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128.csproj|solutionrelative:onet.fau.tx.16_128\\initialization\\globalconfigservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{139903BD-0D75-45B3-A8CF-7701A1A38543}|ONet.FAU.Tx16_128.Extension\\ONet.FAU.Tx16_128.Extension.csproj|F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\onet.fau.tx16_128.extension\\onetfautx16_128extensionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{139903BD-0D75-45B3-A8CF-7701A1A38543}|ONet.FAU.Tx16_128.Extension\\ONet.FAU.Tx16_128.Extension.csproj|solutionrelative:onet.fau.tx16_128.extension\\onetfautx16_128extensionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 286,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\App.xaml.cs",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx.16_128\\App.xaml.cs",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\App.xaml.cs",
+              "RelativeToolTip": "ONet.FAU.Tx.16_128\\App.xaml.cs",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAAAAQBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:18:33.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\App.xaml",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx.16_128\\App.xaml",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\App.xaml",
+              "RelativeToolTip": "ONet.FAU.Tx.16_128\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-08T06:17:44.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VisionProcess.cs",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Initialization\\VisionProcess.cs",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx.16_128\\Initialization\\VisionProcess.cs",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Initialization\\VisionProcess.cs",
+              "RelativeToolTip": "ONet.FAU.Tx.16_128\\Initialization\\VisionProcess.cs",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAAAPwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:01:01.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "F:\\DM.Foundation\\DM.UserManagement\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\DM.Foundation\\DM.UserManagement\\Services\\UserService.cs",
+              "ToolTip": "F:\\DM.Foundation\\DM.UserManagement\\Services\\UserService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\DM.Foundation\\DM.UserManagement\\Services\\UserService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:39:57.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainView.xaml.cs",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Views\\MainView.xaml.cs",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx.16_128\\Views\\MainView.xaml.cs",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Views\\MainView.xaml.cs",
+              "RelativeToolTip": "ONet.FAU.Tx.16_128\\Views\\MainView.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwDoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:22:22.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Views\\MainView.xaml",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx.16_128\\Views\\MainView.xaml",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Views\\MainView.xaml",
+              "RelativeToolTip": "ONet.FAU.Tx.16_128\\Views\\MainView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-08T05:59:58.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx.16_128\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "ONet.FAU.Tx.16_128\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAuwBQBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:00:08.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RuntimeContext.cs",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx16_128.Extension\\Services\\RuntimeContext.cs",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx16_128.Extension\\Services\\RuntimeContext.cs",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx16_128.Extension\\Services\\RuntimeContext.cs",
+              "RelativeToolTip": "ONet.FAU.Tx16_128.Extension\\Services\\RuntimeContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:19:36.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ParameterInitializer.cs",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Initialization\\ParameterInitializer.cs",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx.16_128\\Initialization\\ParameterInitializer.cs",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Initialization\\ParameterInitializer.cs",
+              "RelativeToolTip": "ONet.FAU.Tx.16_128\\Initialization\\ParameterInitializer.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAowAwBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:00:51.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MotionSystemService.cs",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Initialization\\MotionSystemService.cs",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx.16_128\\Initialization\\MotionSystemService.cs",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Initialization\\MotionSystemService.cs",
+              "RelativeToolTip": "ONet.FAU.Tx.16_128\\Initialization\\MotionSystemService.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAywDcBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:00:42.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MotionSystemInitializer.cs",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Initialization\\MotionSystemInitializer.cs",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx.16_128\\Initialization\\MotionSystemInitializer.cs",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Initialization\\MotionSystemInitializer.cs",
+              "RelativeToolTip": "ONet.FAU.Tx.16_128\\Initialization\\MotionSystemInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:00:31.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GlobalConfigService.cs",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Initialization\\GlobalConfigService.cs",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx.16_128\\Initialization\\GlobalConfigService.cs",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx.16_128\\Initialization\\GlobalConfigService.cs",
+              "RelativeToolTip": "ONet.FAU.Tx.16_128\\Initialization\\GlobalConfigService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowBgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:00:22.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ONetFAUTx16_128ExtensionModule.cs",
+              "DocumentMoniker": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx16_128.Extension\\ONetFAUTx16_128ExtensionModule.cs",
+              "RelativeDocumentMoniker": "ONet.FAU.Tx16_128.Extension\\ONetFAUTx16_128ExtensionModule.cs",
+              "ToolTip": "F:\\\u9879\u76EE\\\u6DF1\u5733\\\u6602\u7EB3\\FAU_\u8026\u5408\u8BBE\u5907\\ONet.FAU.Tx.16_128\\ONet.FAU.Tx16_128.Extension\\ONetFAUTx16_128ExtensionModule.cs",
+              "RelativeToolTip": "ONet.FAU.Tx16_128.Extension\\ONetFAUTx16_128ExtensionModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T06:05:07.105Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
