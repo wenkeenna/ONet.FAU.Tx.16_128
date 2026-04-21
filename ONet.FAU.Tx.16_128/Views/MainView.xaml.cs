@@ -88,6 +88,15 @@ namespace ONet.FAU.Tx._16_128.Views
                 }
 
 
+
+                // 设置窗口的最大高度
+                this.MaxHeight = Screen.PrimaryScreen.WorkingArea.Height;
+
+
+                this.WindowState = WindowState.Maximized;
+
+
+
                 // 读取配置中的布尔变量
                 bool loadLayoutOnStartup = bool.Parse(ConfigurationManager.AppSettings["LoadLayoutOnStartup"]);
 
@@ -140,7 +149,7 @@ namespace ONet.FAU.Tx._16_128.Views
         }
 
         #region 加载/保存布局/恢复布局
-        private string AvaLonDockFilePath = "D:\\MyApp-Temp\\Layout";
+        private string AvaLonDockFilePath = "D:\\MyApp\\Layout";
         private void LoadLayout(string layoutFileName, DockingManager dockingManager)
         {
             try

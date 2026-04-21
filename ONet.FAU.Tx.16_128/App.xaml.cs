@@ -16,6 +16,7 @@ using DryIoc;
 using ONet.FAU.Tx._16_128.Initialization;
 using ONet.FAU.Tx._16_128.ViewModels;
 using ONet.FAU.Tx._16_128.Views;
+using ONet.FAU.Tx16_128.Extension.Common;
 using ONet.FAU.Tx16_128.Extension.Services;
 using Prism.DryIoc;
 using Prism.Events;
@@ -101,7 +102,7 @@ namespace ONet.FAU.Tx._16_128
 
             containerRegistry.RegisterInstance<ITrayGridService>(trayGridService);//托盘注入
 
-            containerRegistry.RegisterSingleton<UserService>(() => new UserService("D:\\MyApp-Temp\\Config\\Users.db"));//用户数据库文件路径
+            containerRegistry.RegisterSingleton<UserService>(() => new UserService("D:\\MyApp\\Config\\Users.db"));//用户数据库文件路径
 
             //var motionSystemService = MotionSystemInitializer.Initialize(eventAggregator);//初始化轴实例-在打样机台测试
 
@@ -130,7 +131,9 @@ namespace ONet.FAU.Tx._16_128
             containerRegistry.RegisterInstance<IVisionProcess>(visionProcess);//注册图像处理实例
 
 
+            containerRegistry.RegisterInstance<Tx16_128.Extension.Common.GolightOSMWD41310Helper>(new GolightOSMWD41310Helper(logger), "LaserLightSourceA");//光源注入
 
+            containerRegistry.RegisterInstance<Tx16_128.Extension.Common.GolightOSMWD41310Helper>(new GolightOSMWD41310Helper(logger), "LaserLightSourceB");//光源注入
 
             var runtimeContext = containerRegistry.GetContainer().Resolve<IRuntimeContext>();
 
@@ -145,7 +148,7 @@ namespace ONet.FAU.Tx._16_128
 
             var m8811 = containerRegistry.GetContainer().Resolve<MaynuoM8811Helper>();
 
-            ToolExecutionContext toolExecutionContext = new ToolExecutionContext();
+            ToolExecutionContext toolExecutionContext = new ToolExecutionContext(containerRegistry.GetContainer().Resolve<IContainerProvider>());
             toolExecutionContext.Set("DataBindingContext", dataBindingContext); //将数据绑定容器添加到工具执行上下文
             toolExecutionContext.Set("IMotionSystemService", motionSystemService);//获取控制卡相关实例，包括轴实例、输入、输出
             toolExecutionContext.Set("IVisionProcess", visionProcess);//添加图像处理实例到工具执行参数
@@ -180,16 +183,11 @@ namespace ONet.FAU.Tx._16_128
 
             moduleCatalog.AddModule<DM.Vision.Vision_Module>();//视觉模块
 
-            //  moduleCatalog.AddModule<DM.AnalogCamLib.AnalogCam_Module>();//模拟信号相机模块
-
-            //moduleCatalog.AddModule<DM.Foundation.UserPermission.PermissionModule>();//用户权限模块
-
+            moduleCatalog.AddModule<DM.AnalogCamLib.AnalogCam_Module>();//模拟信号相机模块
 
             moduleCatalog.AddModule<DM.UserManagement.UserManagement_Module>();
 
-
             moduleCatalog.AddModule<DM.LoginModule.Login_Module>();
-
 
             moduleCatalog.AddModule<DM.ManualMotionControl.ManualMotion_Module>();//手动轴控制模块
 
@@ -197,7 +195,7 @@ namespace ONet.FAU.Tx._16_128
 
             moduleCatalog.AddModule<DM.TrayMap.TrayModule>();//上料托盘模块
 
-
+            moduleCatalog.AddModule<ONet.FAU.Tx16_128.Extension.ONetFAUTx16_128ExtensionModule>();//客户定制模块
         }
 
 
@@ -232,10 +230,10 @@ namespace ONet.FAU.Tx._16_128
 
                 dialog.ShowDialog("LoginView", parameters, Callback);
             }
-            catch (Exception)
+            catch (Exception  ex)
             {
 
-
+                MessageBox.Show(ex.ToString());
             }
         }
 

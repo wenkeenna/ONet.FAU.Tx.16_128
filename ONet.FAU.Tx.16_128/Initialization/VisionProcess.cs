@@ -249,7 +249,6 @@ namespace ONet.FAU.Tx._16_128.Initialization
             {
                 procedure = (VmProcedure)VmSolution.Instance["RealTime"];
 
-
                 procedure.ContinuousRunEnable = RunEnable;
 
                 await Task.Delay(500);

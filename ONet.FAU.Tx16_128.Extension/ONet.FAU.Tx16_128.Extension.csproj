@@ -50,6 +50,12 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DM.Foundation.DataBinding">
+      <HintPath>..\..\..\..\..\..\DM.Foundation\DM.Foundation.DataBinding\bin\x64\Debug\DM.Foundation.DataBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="DM.Foundation.Logging">
+      <HintPath>..\..\..\..\..\..\DM.Foundation\DM.Foundation.Logging\bin\x64\Debug\DM.Foundation.Logging.dll</HintPath>
+    </Reference>
     <Reference Include="DM.Foundation.Shared">
       <HintPath>..\..\..\..\..\..\DM.Foundation\DM.Foundation.Shared\bin\x64\Debug\DM.Foundation.Shared.dll</HintPath>
     </Reference>
@@ -91,6 +97,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\GolightOSMWD41310Helper.cs" />
+    <Compile Include="Model\ChannelData.cs" />
+    <Compile Include="Model\LaserChannelModel.cs" />
     <Compile Include="ONetFAUTx16_128ExtensionModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -106,6 +115,14 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Services\RuntimeContext.cs" />
+    <Compile Include="ViewModels\GolightOSMWD41310_A_ViewModel.cs" />
+    <Compile Include="ViewModels\GolightOSMWD41310_B_ViewModel.cs" />
+    <Compile Include="Views\GolightOSMWD41310_A_View.xaml.cs">
+      <DependentUpon>GolightOSMWD41310_A_View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GolightOSMWD41310_B_View.xaml.cs">
+      <DependentUpon>GolightOSMWD41310_B_View.xaml</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -116,11 +133,16 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Common\" />
-    <Folder Include="Model\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
+    <Page Include="Views\GolightOSMWD41310_A_View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GolightOSMWD41310_B_View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
