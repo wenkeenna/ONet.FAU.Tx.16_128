@@ -31,6 +31,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using static DM.InstrumentKit.Services.AD8622Helper;
 
 namespace ONet.FAU.Tx._16_128
 {
@@ -57,7 +58,7 @@ namespace ONet.FAU.Tx._16_128
             globalConfigService.SetConfigPath("LicensePath", $"{basePath}\\Config\\License");//软件授权文件路径
 
             globalConfigService.SetConfigPath("ToolBaseDll", "DM.ToolBase.dll");
-            globalConfigService.SetConfigPath("ToolBaseDllEx", "ONetDaulLens8663.dll");//
+            globalConfigService.SetConfigPath("ToolBaseDllEx", "ONet.FAU.Tx16_128.Extension.dll");//
 
             globalConfigService.SetConfigPath("ControlCard", $"{basePath}\\Config");//控制卡配置文件
             globalConfigService.SetConfigPath("VisionMaster", $"{basePath}\\VisionMaster");//海康图像处理解决方案
@@ -68,7 +69,18 @@ namespace ONet.FAU.Tx._16_128
 
             var logger = containerRegistry.GetContainer().Resolve<ILogger>();//从容器获取日志实例
 
-            containerRegistry.RegisterSingleton<AD8622Helper>(() => new AD8622Helper());//三轴压力传感器注入
+            var myConfig = new ADChannelConfig
+            {
+                LeftX = 2,
+                LeftY = 1,
+                LeftZ = 0,
+
+                RightX = 5,
+                RightY = 4,
+                RightZ = 3,
+                GlueZ = 6
+            };
+            containerRegistry.RegisterSingleton<AD8622Helper>(() => new AD8622Helper(myConfig));//三轴压力传感器注入
 
             containerRegistry.RegisterSingleton<UPS81BHelper>(() => new UPS81BHelper(logger));//UV灯注入
 
@@ -110,8 +122,8 @@ namespace ONet.FAU.Tx._16_128
 
             containerRegistry.RegisterInstance<IMotionSystemService>(motionSystemService);//轴实例注入
 
-            var maynuoM8811 = new MaynuoM8811Helper();
-            containerRegistry.RegisterInstance<MaynuoM8811Helper>(maynuoM8811);//源表实例注入
+            var maynuoM8811 = new Tx16_128.Extension.Common.MaynuoM8811Helper(logger);
+            containerRegistry.RegisterInstance<Tx16_128.Extension.Common.MaynuoM8811Helper>(maynuoM8811);//源表实例注入
 
             containerRegistry.RegisterSingleton<CalibrationServices>();//标定转换服务注入
 
@@ -135,6 +147,9 @@ namespace ONet.FAU.Tx._16_128
 
             containerRegistry.RegisterInstance<Tx16_128.Extension.Common.GolightOSMWD41310Helper>(new GolightOSMWD41310Helper(logger), "LaserLightSourceB");//光源注入
 
+            containerRegistry.RegisterSingleton<Tx16_128.Extension.Common.OpticalModuleService>();//光模块注入
+
+
             var runtimeContext = containerRegistry.GetContainer().Resolve<IRuntimeContext>();
 
             var ad8622 = containerRegistry.GetContainer().Resolve<AD8622Helper>();
@@ -146,7 +161,7 @@ namespace ONet.FAU.Tx._16_128
             var dc65 = containerRegistry.GetContainer().Resolve<DC65LightSourceHelper>();
 
 
-            var m8811 = containerRegistry.GetContainer().Resolve<MaynuoM8811Helper>();
+            var m8811 = containerRegistry.GetContainer().Resolve<Tx16_128.Extension.Common.MaynuoM8811Helper>();
 
             ToolExecutionContext toolExecutionContext = new ToolExecutionContext(containerRegistry.GetContainer().Resolve<IContainerProvider>());
             toolExecutionContext.Set("DataBindingContext", dataBindingContext); //将数据绑定容器添加到工具执行上下文

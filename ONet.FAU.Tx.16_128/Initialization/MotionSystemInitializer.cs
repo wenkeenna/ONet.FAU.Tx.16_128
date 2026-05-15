@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 
 namespace ONet.FAU.Tx._16_128.Initialization
 {
-    public class MotionSystemInitializer
+    public static class MotionSystemInitializer
     {
         /// <summary>
         /// 创建轴实例
@@ -420,11 +420,23 @@ namespace ONet.FAU.Tx._16_128.Initialization
             output = new DigitalOutput()
             {
                 CardIndex = 1,
-                Name = "吹气散热",
+                Name = "左夹爪",
                 Address = 2,
                 Description = "",
             };
             system.AddOutput(output);
+
+
+            output = new DigitalOutput()
+            {
+                CardIndex = 1,
+                Name = "右夹爪",
+                Address = 3,
+                Description = "",
+            };
+            system.AddOutput(output);
+
+
 
             output = new DigitalOutput()
             {
@@ -627,33 +639,12 @@ namespace ONet.FAU.Tx._16_128.Initialization
                 BindingParamName = "[右轴组]复位位置:Z"
             });
 
-            system.ResetItems.Add(new HomingItem()
-            {
-                StepType = HomeStepType.AbsMove,
-                AxisName = MotionAxisNames.LeftY,
-                Priority = 30,
-                Speed = 10,
-                ResetPosition = 5,
-                Description = "LY轴复位",
-                BindingParamName = "[左轴组]复位位置:Y"
-            });
-
-            system.ResetItems.Add(new HomingItem()
-            {
-                StepType = HomeStepType.AbsMove,
-                AxisName = MotionAxisNames.RightY,
-                Priority = 30,
-                Speed = 10,
-                ResetPosition = 5,
-                Description = "RY轴复位",
-                BindingParamName = "[右轴组]复位位置:Y"
-            });
 
             system.ResetItems.Add(new HomingItem()
             {
                 StepType = HomeStepType.AbsMove,
                 AxisName = MotionAxisNames.LeftX,
-                Priority = 40,
+                Priority = 30,
                 Speed = 10,
                 ResetPosition = 5,
                 Description = "LX轴复位",
@@ -664,12 +655,36 @@ namespace ONet.FAU.Tx._16_128.Initialization
             {
                 StepType = HomeStepType.AbsMove,
                 AxisName = MotionAxisNames.RightX,
-                Priority = 40,
+                Priority = 30,
                 Speed = 10,
                 ResetPosition = 5,
                 Description = "RX轴复位",
                 BindingParamName = "[右轴组]复位位置:X"
             });
+
+            system.ResetItems.Add(new HomingItem()
+            {
+                StepType = HomeStepType.AbsMove,
+                AxisName = MotionAxisNames.LeftY,
+                Priority = 40,
+                Speed = 10,
+                ResetPosition = 5,
+                Description = "LY轴复位",
+                BindingParamName = "[左轴组]复位位置:Y"
+            });
+
+            system.ResetItems.Add(new HomingItem()
+            {
+                StepType = HomeStepType.AbsMove,
+                AxisName = MotionAxisNames.RightY,
+                Priority = 40,
+                Speed = 10,
+                ResetPosition = 5,
+                Description = "RY轴复位",
+                BindingParamName = "[右轴组]复位位置:Y"
+            });
+
+           
 
             //角度轴复位配置
             system.ResetItems.Add(new HomingItem()
@@ -778,7 +793,7 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             NegativeContent="GY-",
                             PositiveContent="GY+",
                             StepLab="Gy",
-                              PositionText="Gy",
+                            PositionText="Gy",
                             Position=0.0000,
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=true
@@ -799,7 +814,7 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             NegativeContent="Cam-",
                             PositiveContent="Cam+",
                             StepLab="Cam",
-                               PositionText="Cam",
+                            PositionText="Cam",
                             Position=0.0000,
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=true
@@ -850,6 +865,13 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=false
                         },
+                          new AxisViewModel (motionSystem,MotionAxisNames.Default,eventAggregator,false)
+                        {
+                            NegativeContent="default-",
+                            PositiveContent="default+",
+                            StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
+                            IsButtonVisible=false
+                        },
                     }
                 },
                 new AxisGroupViewModel
@@ -878,13 +900,13 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             NegativeContent="Y-",
                             PositiveContent="Y+",
                             StepLab="Y",
-                                  PositionText="Y",
+                            PositionText="Y",
                             Position=0.0000,
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=true
                         },
 
-                             new AxisViewModel (motionSystem,MotionAxisNames.LeftZ,eventAggregator,false)
+                        new AxisViewModel (motionSystem,MotionAxisNames.LeftZ,eventAggregator,false)
                         {
 
                             NegativeContent="Z-",
@@ -920,7 +942,7 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             NegativeContent="Rx-",
                             PositiveContent="Rx+",
                             StepLab="RX",
-                                  PositionText="RX",
+                            PositionText="RX",
                             Position=0.0000,
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=true
@@ -932,7 +954,7 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             NegativeContent="LRy-",
                             PositiveContent="LRy+",
                             StepLab="RY",
-                                  PositionText="RY",
+                            PositionText="RY",
                             Position=0.0000,
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=true
@@ -947,6 +969,13 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             Position=0.0000,
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=true
+                        },
+                        new AxisViewModel (motionSystem,MotionAxisNames.Default,eventAggregator,false)
+                        {
+                            NegativeContent="default-",
+                            PositiveContent="default+",
+                            StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
+                            IsButtonVisible=false
                         },
                     }
                 },
@@ -989,7 +1018,7 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             NegativeContent="Z-",
                             PositiveContent="Z+",
                             StepLab="Z",
-                                  PositionText="Z",
+                            PositionText="Z",
                             Position=0.0000,
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=true
@@ -1019,7 +1048,7 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             NegativeContent="Rx-",
                             PositiveContent="Rx+",
                             StepLab="RX",
-                                  PositionText="RX",
+                            PositionText="RX",
                             Position=0.0000,
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=true
@@ -1031,7 +1060,7 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             NegativeContent="LRy-",
                             PositiveContent="LRy+",
                             StepLab="RY",
-                                  PositionText="RY",
+                            PositionText="RY",
                             Position=0.0000,
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=true
@@ -1046,8 +1075,14 @@ namespace ONet.FAU.Tx._16_128.Initialization
                             Position=0.0000,
                             StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
                             IsButtonVisible=true
-                        }
-
+                        },
+                        new AxisViewModel (motionSystem,MotionAxisNames.Default,eventAggregator,false)
+                        {
+                            NegativeContent="default-",
+                            PositiveContent="default+",
+                            StepList=new List<double>(){0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.02,0.05,0.1,0.5,1,2,5,10},
+                            IsButtonVisible=false
+                        },
 
                     }
                 }

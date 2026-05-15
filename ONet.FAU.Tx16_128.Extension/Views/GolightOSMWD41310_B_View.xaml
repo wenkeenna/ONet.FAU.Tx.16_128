@@ -13,9 +13,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-
                 <ResourceDictionary Source="pack://application:,,,/DM.Foundation.Styles;component/Themes/Themes.xaml" />
-
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
@@ -38,7 +36,7 @@
                             FontSize="11"
                             FontWeight="Bold"
                             Foreground="White"
-                            Text="激光光源控制[A]" />
+                            Text="激光光源控制[B]" />
                     </Border>
                     <TextBlock
                         HorizontalAlignment="Right"

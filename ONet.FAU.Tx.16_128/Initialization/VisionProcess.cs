@@ -99,12 +99,91 @@ namespace ONet.FAU.Tx._16_128.Initialization
             }
         }
 
-        public bool ProcessExecute(string ProcessName, out float X, out float Y)
-        {
-            X = (float)0.0123;
-            Y = (float)0.456;
-            return false;
-        }
+    
+
+        //public bool ProcessExecute(string ProcessName, out float X, out float Y, out float Angle, string UserDefined)
+        //{
+
+        //    X = 0;
+        //    Y = 0;
+        //    Angle = 0;
+
+        //    try
+        //    {
+
+        //        procedure = (VmProcedure)VmSolution.Instance[ProcessName];
+
+        //        procedure.ContinuousRunEnable = false;
+
+        //        VmModule = procedure;
+
+        //        if (!(bool)VmSolution.Instance.IsReady)
+        //        {
+        //            _eventAggregator.GetEvent<Event_Message>().Publish("[Vision-实时图像]模块订阅未完成");
+        //            return false;
+        //        }
+
+        //        _eventAggregator.GetEvent<VisionExecuteEvent>().Publish(VmModule);
+
+        //        if (procedure != null)
+        //        {
+        //            procedure.Run();
+        //        }
+        //        else
+        //        {
+        //            _eventAggregator.GetEvent<Event_Message>().Publish($"{ProcessName}:实例为Null");
+        //            _logger.Error($"{ProcessName}:实例为Null");
+
+        //            return false;
+        //        }
+
+        //        IntDataArray result_state = procedure.ModuResult.GetOutputInt("State");
+
+
+
+
+        //        if (result_state.pIntVal[0] != 1)
+        //        {
+        //            _eventAggregator.GetEvent<Event_Message>().Publish($"{ProcessName}:执行失败");
+        //            _logger.Error($"{ProcessName}:执行失败");
+        //            return false;
+        //        }
+
+        //        FloatDataArray result_x = procedure.ModuResult.GetOutputFloat("X");
+        //        FloatDataArray result_y = procedure.ModuResult.GetOutputFloat("Y");
+        //        FloatDataArray result_angle = procedure.ModuResult.GetOutputFloat("Angle");
+        //        var pix_X = result_x.pFloatVal[0];
+        //        var pix_Y = result_y.pFloatVal[0];
+        //        Angle = result_angle.pFloatVal[0];
+
+        //        if (ProcessName == "右Lens标定" || ProcessName == "左Lens标定")
+        //        {
+        //            X = pix_X;
+        //            Y = pix_Y;
+        //        }
+
+
+        //        if (ProcessName == "左轴耦合位置标定" || ProcessName == "右轴组耦合位置标定")
+        //        {
+        //            X = (float)pix_X;
+        //            Y = (float)pix_Y;
+        //        }
+
+
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        _eventAggregator.GetEvent<Event_Message>().Publish($"{ProcessName}:异常，{ex.Message}");
+        //        _logger.Error($"{ProcessName}:异常，{ex.Message}");
+
+        //        return false;
+        //    }
+
+        //}
+
+
 
         public bool ProcessExecute(string ProcessName, out float X, out float Y, out float Angle, string UserDefined)
         {
@@ -115,8 +194,19 @@ namespace ONet.FAU.Tx._16_128.Initialization
 
             try
             {
+                var StrSplit = ProcessName.Split(':');
+                if (StrSplit.Length < 2)
+                {
+                    _eventAggregator.GetEvent<Event_Message>().Publish($"{ProcessName}:参数错误");
+                    _logger.Error($"{ProcessName}:参数错误");
+                    return false;
+                }
+                var CaliFileName = StrSplit[0];
+                var VisionName = StrSplit[1];
 
-                procedure = (VmProcedure)VmSolution.Instance[ProcessName];
+                _eventAggregator.GetEvent<Event_Message>().Publish($"ProcessExecute:{CaliFileName}:{VisionName}");
+
+                procedure = (VmProcedure)VmSolution.Instance[VisionName];
 
                 procedure.ContinuousRunEnable = false;
 
@@ -136,8 +226,8 @@ namespace ONet.FAU.Tx._16_128.Initialization
                 }
                 else
                 {
-                    _eventAggregator.GetEvent<Event_Message>().Publish($"{ProcessName}:实例为Null");
-                    _logger.Error($"{ProcessName}:实例为Null");
+                    _eventAggregator.GetEvent<Event_Message>().Publish($"{VisionName}:实例为Null");
+                    _logger.Error($"{VisionName}:实例为Null");
 
                     return false;
                 }
@@ -149,8 +239,8 @@ namespace ONet.FAU.Tx._16_128.Initialization
 
                 if (result_state.pIntVal[0] != 1)
                 {
-                    _eventAggregator.GetEvent<Event_Message>().Publish($"{ProcessName}:执行失败");
-                    _logger.Error($"{ProcessName}:执行失败");
+                    _eventAggregator.GetEvent<Event_Message>().Publish($"{VisionName}:执行失败");
+                    _logger.Error($"{VisionName}:执行失败");
                     return false;
                 }
 
@@ -161,21 +251,25 @@ namespace ONet.FAU.Tx._16_128.Initialization
                 var pix_Y = result_y.pFloatVal[0];
                 Angle = result_angle.pFloatVal[0];
 
-                if (ProcessName == "右Lens标定" || ProcessName == "左Lens标定")
+                if (ProcessName == "右标定" || ProcessName == "左标定")
                 {
                     X = pix_X;
                     Y = pix_Y;
+
+                    return true;
                 }
-
-
-
-
-
-                if (ProcessName == "左轴耦合位置标定" || ProcessName == "右轴组耦合位置标定")
+                else
                 {
-                    X = (float)pix_X;
-                    Y = (float)pix_Y;
+                    var res = GetVisionResult(CaliFileName, VisionName, out float outX, out float outY, out float angle);
+
+                    X = outX;
+                    Y = outY;
+                    Angle = angle;
                 }
+
+
+
+
 
 
                 return true;
@@ -185,6 +279,89 @@ namespace ONet.FAU.Tx._16_128.Initialization
 
                 _eventAggregator.GetEvent<Event_Message>().Publish($"{ProcessName}:异常，{ex.Message}");
                 _logger.Error($"{ProcessName}:异常，{ex.Message}");
+
+                return false;
+            }
+
+        }
+        /// <summary>
+        /// 标定
+        /// </summary>
+        /// <param name="VisionName"></param>
+        /// <param name="X"></param>
+        /// <param name="Y"></param>
+        /// <param name="Angle"></param>
+        /// <returns></returns>
+        public bool ProcessExecute(string VisionName, out float X, out float Y)
+        {
+
+            X = 0;
+            Y = 0;
+        
+            try
+            {
+               
+                procedure = (VmProcedure)VmSolution.Instance[VisionName];
+
+                procedure.ContinuousRunEnable = false;
+
+                VmModule = procedure;
+
+                if (!(bool)VmSolution.Instance.IsReady)
+                {
+                    _eventAggregator.GetEvent<Event_Message>().Publish("[Vision-实时图像]模块订阅未完成");
+                    return false;
+                }
+
+                _eventAggregator.GetEvent<VisionExecuteEvent>().Publish(VmModule);
+
+                if (procedure != null)
+                {
+                    procedure.Run();
+                }
+                else
+                {
+                    _eventAggregator.GetEvent<Event_Message>().Publish($"{VisionName}:实例为Null");
+                    _logger.Error($"{VisionName}:实例为Null");
+
+                    return false;
+                }
+
+                IntDataArray result_state = procedure.ModuResult.GetOutputInt("State");
+
+
+
+
+                if (result_state.pIntVal[0] != 1)
+                {
+                    _eventAggregator.GetEvent<Event_Message>().Publish($"{VisionName}:执行失败");
+                    _logger.Error($"{VisionName}:执行失败");
+                    return false;
+                }
+
+                FloatDataArray result_x = procedure.ModuResult.GetOutputFloat("X");
+                FloatDataArray result_y = procedure.ModuResult.GetOutputFloat("Y");
+                FloatDataArray result_angle = procedure.ModuResult.GetOutputFloat("Angle");
+                var pix_X = result_x.pFloatVal[0];
+                var pix_Y = result_y.pFloatVal[0];
+               var Angle = result_angle.pFloatVal[0];
+
+                if (VisionName == "右标定" || VisionName == "左标定")
+                {
+                    X = pix_X;
+                    Y = pix_Y;
+
+                    return true;
+                }
+
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                _eventAggregator.GetEvent<Event_Message>().Publish($"{VisionName}:异常，{ex.Message}");
+                _logger.Error($"{VisionName}:异常，{ex.Message}");
 
                 return false;
             }
@@ -315,5 +492,72 @@ namespace ONet.FAU.Tx._16_128.Initialization
                 }
             }
         }
+
+
+        private bool GetVisionResult(string CaliFileName, string ProcessName, out float outX, out float outY, out float outAngle)
+        {
+            outX = float.NaN;
+            outY = float.NaN;
+            outAngle = float.NaN;
+
+            try
+            {
+                IntDataArray ResState = procedure.ModuResult.GetOutputInt("State");
+
+                if (ResState.pIntVal[0] != 1)
+                {
+                    _eventAggregator.GetEvent<Event_Message>().Publish($"{ProcessName}:State:{ResState}-执行失败");
+                    _logger.Error($"{ProcessName}:执行失败");
+                    return false;
+                }
+
+                FloatDataArray X = procedure.ModuResult.GetOutputFloat("X");
+                FloatDataArray Y = procedure.ModuResult.GetOutputFloat("Y");
+                FloatDataArray Angle = procedure.ModuResult.GetOutputFloat("Angle");
+
+                var PIX_RES_X = X.pFloatVal[0];
+                var PIX_RES_Y = Y.pFloatVal[0];
+                var PIX_RES_Angle = Angle.pFloatVal[0];
+
+
+                string pathLeft = $"D:\\MyApp\\CalibrationFile\\{CaliFileName}.xml";
+
+                _calibration.AffineTransformation(pathLeft, CaliFileName, PIX_RES_X, PIX_RES_Y, out var RES_X, out var RES_Y);
+
+                _logger.Info($"定位坐标{PIX_RES_X},{PIX_RES_Y},{RES_X},{RES_Y}");
+
+
+                outX = RES_X;
+                outY = RES_Y;
+
+                outAngle = PIX_RES_Angle;
+
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _eventAggregator.GetEvent<Event_Message>().Publish($"{ex.ToString()}");
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

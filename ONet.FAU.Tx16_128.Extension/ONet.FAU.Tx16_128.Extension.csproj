@@ -56,8 +56,17 @@
     <Reference Include="DM.Foundation.Logging">
       <HintPath>..\..\..\..\..\..\DM.Foundation\DM.Foundation.Logging\bin\x64\Debug\DM.Foundation.Logging.dll</HintPath>
     </Reference>
+    <Reference Include="DM.Foundation.Motion">
+      <HintPath>..\..\..\..\..\..\DM.Foundation\DM.Foundation.Motion\bin\x64\Debug\DM.Foundation.Motion.dll</HintPath>
+    </Reference>
     <Reference Include="DM.Foundation.Shared">
       <HintPath>..\..\..\..\..\..\DM.Foundation\DM.Foundation.Shared\bin\x64\Debug\DM.Foundation.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="DM.InstrumentKit">
+      <HintPath>..\..\..\..\..\..\DM.Foundation\DM.InstrumentKit\bin\x64\Debug\DM.InstrumentKit.dll</HintPath>
+    </Reference>
+    <Reference Include="DM.Vision">
+      <HintPath>..\..\..\..\..\..\DM.Foundation\DM.Vision\bin\x64\Debug\DM.Vision.dll</HintPath>
     </Reference>
     <Reference Include="DryIoc, Version=4.7.7.0, Culture=neutral, PublicKeyToken=dfbf2bd50fcf7768, processorArchitecture=MSIL">
       <HintPath>..\packages\DryIoc.dll.4.7.7\lib\net45\DryIoc.dll</HintPath>
@@ -97,9 +106,32 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\CouplingController.cs" />
+    <Compile Include="Common\DataSaveHelper.cs" />
     <Compile Include="Common\GolightOSMWD41310Helper.cs" />
+    <Compile Include="Common\MaynuoM8811Helper.cs" />
+    <Compile Include="Common\OpticalModuleService.cs" />
+    <Compile Include="Converters\ChIndexToNameConverter.cs" />
+    <Compile Include="Converters\EnumToBooleanConverter.cs" />
+    <Compile Include="Converters\ChannelGroup.cs" />
+    <Compile Include="Converters\CouplingDataBit.cs" />
+    <Compile Include="Enums\InstrumentSwitch.cs" />
+    <Compile Include="Enums\InstrumentType.cs" />
+    <Compile Include="Events\InstrumentCommandEvent.cs" />
+    <Compile Include="Events\InstrumentPara.cs" />
+    <Compile Include="Model\FlatAreaData.cs" />
+    <Compile Include="Services\Coupling\ONetCoupling2D.cs" />
+    <Compile Include="Services\Coupling\ONetFACouplingCorrection.cs" />
+    <Compile Include="Services\Coupling\ONetFAVisionCorrection.cs" />
+    <Compile Include="Services\Coupling\ONetPDPosition.cs" />
     <Compile Include="Model\ChannelData.cs" />
+    <Compile Include="Model\CorrectionPara.cs" />
+    <Compile Include="Model\CouplingData.cs" />
     <Compile Include="Model\LaserChannelModel.cs" />
+    <Compile Include="Model\Parameter1D.cs" />
+    <Compile Include="Model\Parameter2D.cs" />
+    <Compile Include="Model\Result1D.cs" />
+    <Compile Include="Model\Result2D.cs" />
     <Compile Include="ONetFAUTx16_128ExtensionModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -114,14 +146,48 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Services\Coupling\CompositeTool.cs" />
+    <Compile Include="Services\Coupling\ONetCoupling1D.cs" />
     <Compile Include="Services\RuntimeContext.cs" />
+    <Compile Include="ViewModels\CompositeToolViewModel.cs" />
     <Compile Include="ViewModels\GolightOSMWD41310_A_ViewModel.cs" />
     <Compile Include="ViewModels\GolightOSMWD41310_B_ViewModel.cs" />
+    <Compile Include="ViewModels\MaynuoM8811ViewModel.cs" />
+    <Compile Include="ViewModels\ONetCoupling1DViewModel.cs" />
+    <Compile Include="ViewModels\ONetCoupling2DViewModel.cs" />
+    <Compile Include="ViewModels\ONetFACouplingCorrectionViewModel.cs" />
+    <Compile Include="ViewModels\ONetFAVisionCorrectionViewModel.cs" />
+    <Compile Include="ViewModels\ONetPDPositionViewModel.cs" />
+    <Compile Include="ViewModels\OpticalModuleViewModel.cs" />
+    <Compile Include="Views\CompositeToolView.xaml.cs">
+      <DependentUpon>CompositeToolView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\GolightOSMWD41310_A_View.xaml.cs">
       <DependentUpon>GolightOSMWD41310_A_View.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\GolightOSMWD41310_B_View.xaml.cs">
       <DependentUpon>GolightOSMWD41310_B_View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MaynuoM8811View.xaml.cs">
+      <DependentUpon>MaynuoM8811View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ONetCoupling1DView.xaml.cs">
+      <DependentUpon>ONetCoupling1DView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ONetCoupling2DView.xaml.cs">
+      <DependentUpon>ONetCoupling2DView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ONetFACouplingCorrectionView.xaml.cs">
+      <DependentUpon>ONetFACouplingCorrectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ONetFAVisionCorrectionView.xaml.cs">
+      <DependentUpon>ONetFAVisionCorrectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ONetPDPositionView.xaml.cs">
+      <DependentUpon>ONetPDPositionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OpticalModuleView.xaml.cs">
+      <DependentUpon>OpticalModuleView.xaml</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,11 +201,43 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Page Include="Views\CompositeToolView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\GolightOSMWD41310_A_View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\GolightOSMWD41310_B_View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MaynuoM8811View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ONetCoupling1DView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ONetCoupling2DView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ONetFACouplingCorrectionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ONetFAVisionCorrectionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ONetPDPositionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OpticalModuleView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -301,7 +301,7 @@
                                         <ContentControl
                                             x:Name="MaynuoM8811View"
                                             Height="Auto"
-                                            prism:RegionManager.RegionName="Region_MaynuoM8811View"
+                                            prism:RegionManager.RegionName="Region_MaynuoM8811ViewONet"
                                             IsEnabled="{Binding IsLicenseValid}" />
 
                                     </LayoutAnchorable>
@@ -381,7 +381,7 @@
                                     </LayoutAnchorable>-->
 
 
-                                    <!--<LayoutAnchorable
+                                    <LayoutAnchorable
                                         Title="光模块"
                                         CanAutoHide="False"
                                         CanClose="False"
@@ -390,10 +390,10 @@
                                         <ContentControl
                                             x:Name="LightModuleView"
                                             Height="Auto"
-                                            prism:RegionManager.RegionName="Region_LightModule800GView"
+                                            prism:RegionManager.RegionName="OpticalModuleView"
                                             IsEnabled="{Binding IsLicenseValid}" />
 
-                                    </LayoutAnchorable>-->
+                                    </LayoutAnchorable>
 
                                 </LayoutAnchorablePane>
 
@@ -455,7 +455,7 @@
                                             IsEnabled="{Binding IsLicenseValid}" />
                                     </LayoutAnchorable>
                                 </LayoutAnchorablePane>
-                                
+
                             </LayoutPanel>
                         </LayoutPanel>
                     </LayoutRoot>

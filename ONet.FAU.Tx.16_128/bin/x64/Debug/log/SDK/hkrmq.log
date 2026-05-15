@@ -2410,3 +2410,1075 @@
 
 2026-04-21 15:09:51.180 INFO  [26564] [CCommFactory::DeinitSpdLog@226] ------calll Spdlog_DeInit
 
+2026-04-22 15:33:25.522 INFO  [47424] [CTimerProxy::Regitser@64] Register timer event,Handle[0],pUserData[0000022554DCBC60]
+
+2026-04-22 15:33:25.522 INFO  [47424] [CCommFactory::SetLogPath@83] set log---call register timer,timer id[0],this[0000022554DCBC60],pLogPath[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug\log\SDK],m_enumDefultLogLevel[2]
+
+2026-04-22 15:33:25.522 INFO  [47424] [CCommFactory::UpdateLogPath@236] current Path[E]
+
+2026-04-22 15:33:25.546 INFO  [47424] [CMemPool::CMemPool@23] index i[0]---size[1024]
+
+2026-04-22 15:33:25.546 INFO  [47424] [CMemPool::CMemPool@23] index i[1]---size[2048]
+
+2026-04-22 15:33:25.546 INFO  [47424] [CMemPool::CMemPool@23] index i[2]---size[10240]
+
+2026-04-22 15:33:25.546 INFO  [47424] [CMemPool::CMemPool@23] index i[3]---size[65536]
+
+2026-04-22 15:33:25.546 INFO  [47424] [CMemPool::CMemPool@23] index i[4]---size[524288]
+
+2026-04-22 15:33:25.546 INFO  [47424] [CMemPool::CMemPool@23] index i[5]---size[1048576]
+
+2026-04-22 15:33:25.546 INFO  [47424] [CMemPool::CMemPool@23] index i[6]---size[2097152]
+
+2026-04-22 15:33:25.546 INFO  [47424] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:33:25.547 INFO  [47424] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:33:25.547 INFO  [47424] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:33:25.547 INFO  [47424] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:33:25.547 INFO  [47424] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:33:25.547 INFO  [47424] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:33:25.547 INFO  [47424] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:33:25.547 INFO  [47424] [CMQCommBaseClient::BindPort@210] bind localip[127.0.0.1],port[65067]
+
+2026-04-22 15:33:25.548 INFO  [47424] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:33:25.548 INFO  [47424] [CMQCommBaseClient::BindPort@210] bind localip[127.0.0.1],port[65068]
+
+2026-04-22 15:33:25.548 INFO  [47424] [CMQCommRequire::Connect@211] want connect to server[tcp://127.0.0.1:5556],nConnTimeout[10000],client type[Require],m_dwSpliceSendBufSize[10240]
+
+2026-04-22 15:33:25.548 INFO  [47424] [CMQCommBaseClient::Connect@245] mq client type[5]---connect server[127.0.0.1:5556], nLoopTimes[2000],nConnTimeout[10000]
+
+2026-04-22 15:33:25.548 INFO  [47424] [CMQCommBaseClient::ConnectToServer@828] connect to server succ[127.0.0.1]
+
+2026-04-22 15:33:25.548 INFO  [47424] [CMQCommBaseClient::Connect@295] connect to server[tcp://127.0.0.1:5556] success,socket id[3488]-[0000000000000DA0],local ipaddr[127.0.0.1:65068],pIocp[0000022558825B20]
+
+2026-04-22 15:33:25.548 INFO  [47424] [CMQCommBaseClient::RegisterToServer@662] Send Register cmd succ,wait rsp timeout[5000],socketid[3488]
+
+2026-04-22 15:33:25.550 INFO  [47424] [CMQCommBaseClient::RegisterToServer@667] recv register rsp status[1],socket id[3488],m_strServerAddr[tcp://127.0.0.1:5556]
+
+2026-04-22 15:33:25.550 INFO  [47424] [CTimerProxy::Regitser@64] Register timer event,Handle[1],pUserData[0000022559C40210]
+
+2026-04-22 15:33:25.550 INFO  [47424] [CMQCommBaseClient::RegitserHeartBeatTimer@551] call register heartbeat timer. timerid[1],client[0000022559C40210]---nClientType[5]
+
+2026-04-22 15:33:25.550 INFO  [47424] [CMQCommRequire::Connect@243] want connect to server[tcp://127.0.0.1:5556] succ,client type[Require]
+
+2026-04-22 15:33:25.556 INFO  [47424] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[3488]
+
+2026-04-22 15:33:25.556 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022559C40210]
+
+2026-04-22 15:33:25.556 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022559C40210]
+
+2026-04-22 15:33:25.556 INFO  [47424] [CIocpTcpTransmitter::Close@195] want close socket,socket id[3488]
+
+2026-04-22 15:33:25.556 ERROR [46888] [pfnProcSocketExcpetion@70] Recv Connect Error 1236,Socket ID[3488]---[0000000000000DA0]
+
+2026-04-22 15:33:25.556 INFO  [46888] [ProcConnExceptionCB@23] Recv PConnExceptionCB,pCommObj[0000022559C40210] error code[1236]
+
+2026-04-22 15:33:25.556 INFO  [46888] [CMQCommBaseClient::ProcessConnException@356] post connect exception ,pIocpTcp[0000022558825B20],nErrCode[1236],this[0000022559C40210]
+
+2026-04-22 15:33:25.556 INFO  [46888] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[1],client[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [46888] [CTimerProxy::Unregister@73] Unegister timer event,Handle[1]
+
+2026-04-22 15:33:25.558 INFO  [46888] [CTimerProxy::Unregister@78] erase timer event,Handle[1] succ!!!
+
+2026-04-22 15:33:25.558 INFO  [46888] [CTimerProxy::Unregister@86] Unegister timer event,Handle[1]---end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[8],Reconnect Event id[9],--client[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommRequire::~CMQCommRequire@19] call ~CMQCommRequire,this[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[3488]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommRequire::~CMQCommRequire@21] call ~CMQCommRequire,this[0000022559C40210]---end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[0000022559C40210]xxxx
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022559C40210]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[0000022559C40210]---end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[-1]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[6],Reconnect Event id[7],--client[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommRequire::~CMQCommRequire@19] call ~CMQCommRequire,this[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[-1]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommRequire::~CMQCommRequire@21] call ~CMQCommRequire,this[0000022559C3ED40]---end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[0000022559C3ED40]xxxx
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022559C3ED40]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[0000022559C3ED40]---end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[2],Reconnect Event id[3],--client[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[000002255895F440]---end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000002255895F440]xxxx
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002255895F440]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000002255895F440]---end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[0],Reconnect Event id[1],--client[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[0000022558961CA0]---end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[0000022558961CA0]xxxx
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022558961CA0]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[0000022558961CA0]---end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[4],Reconnect Event id[5],--client[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[0000022558962740]---end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[0000022558962740]xxxx
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000022558962740]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[0000022558962740]---end
+
+2026-04-22 15:33:25.572 INFO  [47424] [CTimerProxy::Unregister@73] Unegister timer event,Handle[0]
+
+2026-04-22 15:33:25.572 INFO  [47424] [CTimerProxy::Unregister@78] erase timer event,Handle[0] succ!!!
+
+2026-04-22 15:33:25.572 INFO  [47424] [CTimerProxy::Unregister@86] Unegister timer event,Handle[0]---end
+
+2026-04-22 15:33:25.572 INFO  [47424] [CCommFactory::DeinitSpdLog@226] ------calll Spdlog_DeInit
+
+2026-04-22 15:36:43.513 INFO  [43728] [CTimerProxy::Regitser@64] Register timer event,Handle[0],pUserData[000001E6E133A850]
+
+2026-04-22 15:36:43.513 INFO  [43728] [CCommFactory::SetLogPath@83] set log---call register timer,timer id[0],this[000001E6E133A850],pLogPath[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug\log\SDK],m_enumDefultLogLevel[2]
+
+2026-04-22 15:36:43.513 INFO  [43728] [CCommFactory::UpdateLogPath@236] current Path[E]
+
+2026-04-22 15:36:43.537 INFO  [43728] [CMemPool::CMemPool@23] index i[0]---size[1024]
+
+2026-04-22 15:36:43.537 INFO  [43728] [CMemPool::CMemPool@23] index i[1]---size[2048]
+
+2026-04-22 15:36:43.537 INFO  [43728] [CMemPool::CMemPool@23] index i[2]---size[10240]
+
+2026-04-22 15:36:43.537 INFO  [43728] [CMemPool::CMemPool@23] index i[3]---size[65536]
+
+2026-04-22 15:36:43.537 INFO  [43728] [CMemPool::CMemPool@23] index i[4]---size[524288]
+
+2026-04-22 15:36:43.537 INFO  [43728] [CMemPool::CMemPool@23] index i[5]---size[1048576]
+
+2026-04-22 15:36:43.537 INFO  [43728] [CMemPool::CMemPool@23] index i[6]---size[2097152]
+
+2026-04-22 15:36:43.538 INFO  [43728] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:36:43.538 INFO  [43728] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::BindPort@210] bind localip[127.0.0.1],port[62426]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::BindPort@210] bind localip[127.0.0.1],port[62427]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommRequire::Connect@211] want connect to server[tcp://127.0.0.1:5556],nConnTimeout[10000],client type[Require],m_dwSpliceSendBufSize[10240]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::Connect@245] mq client type[5]---connect server[127.0.0.1:5556], nLoopTimes[2000],nConnTimeout[10000]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::ConnectToServer@828] connect to server succ[127.0.0.1]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::Connect@295] connect to server[tcp://127.0.0.1:5556] success,socket id[3476]-[0000000000000D94],local ipaddr[127.0.0.1:62427],pIocp[000001E6E439D720]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::RegisterToServer@662] Send Register cmd succ,wait rsp timeout[5000],socketid[3476]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::RegisterToServer@667] recv register rsp status[1],socket id[3476],m_strServerAddr[tcp://127.0.0.1:5556]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CTimerProxy::Regitser@64] Register timer event,Handle[1],pUserData[000001E6E44DAC40]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommBaseClient::RegitserHeartBeatTimer@551] call register heartbeat timer. timerid[1],client[000001E6E44DAC40]---nClientType[5]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CMQCommRequire::Connect@243] want connect to server[tcp://127.0.0.1:5556] succ,client type[Require]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[3476]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CIocpTcpTransmitter::Close@195] want close socket,socket id[3476]
+
+2026-04-22 15:36:43.544 ERROR [58992] [pfnProcSocketExcpetion@70] Recv Connect Error 1236,Socket ID[3476]---[0000000000000D94]
+
+2026-04-22 15:36:43.544 INFO  [58992] [ProcConnExceptionCB@23] Recv PConnExceptionCB,pCommObj[000001E6E44DAC40] error code[1236]
+
+2026-04-22 15:36:43.544 INFO  [58992] [CMQCommBaseClient::ProcessConnException@356] post connect exception ,pIocpTcp[000001E6E439D720],nErrCode[1236],this[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [58992] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[1],client[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [58992] [CTimerProxy::Unregister@73] Unegister timer event,Handle[1]
+
+2026-04-22 15:36:43.544 INFO  [58992] [CTimerProxy::Unregister@78] erase timer event,Handle[1] succ!!!
+
+2026-04-22 15:36:43.544 INFO  [58992] [CTimerProxy::Unregister@86] Unegister timer event,Handle[1]---end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[8],Reconnect Event id[9],--client[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommRequire::~CMQCommRequire@19] call ~CMQCommRequire,this[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[3476]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommRequire::~CMQCommRequire@21] call ~CMQCommRequire,this[000001E6E44DAC40]---end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000001E6E44DAC40]xxxx
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E44DAC40]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000001E6E44DAC40]---end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[-1]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[6],Reconnect Event id[7],--client[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommRequire::~CMQCommRequire@19] call ~CMQCommRequire,this[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[-1]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommRequire::~CMQCommRequire@21] call ~CMQCommRequire,this[000001E6E44DD5E0]---end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000001E6E44DD5E0]xxxx
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E44DD5E0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000001E6E44DD5E0]---end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[2],Reconnect Event id[3],--client[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[000001E6E138F6C0]---end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000001E6E138F6C0]xxxx
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E138F6C0]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000001E6E138F6C0]---end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[0],Reconnect Event id[1],--client[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[000001E6E138F060]---end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000001E6E138F060]xxxx
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E138F060]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000001E6E138F060]---end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[4],Reconnect Event id[5],--client[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[000001E6E138D900]---end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000001E6E138D900]xxxx
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001E6E138D900]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000001E6E138D900]---end
+
+2026-04-22 15:36:43.558 INFO  [43728] [CTimerProxy::Unregister@73] Unegister timer event,Handle[0]
+
+2026-04-22 15:36:43.558 INFO  [43728] [CTimerProxy::Unregister@78] erase timer event,Handle[0] succ!!!
+
+2026-04-22 15:36:43.558 INFO  [43728] [CTimerProxy::Unregister@86] Unegister timer event,Handle[0]---end
+
+2026-04-22 15:36:43.558 INFO  [43728] [CCommFactory::DeinitSpdLog@226] ------calll Spdlog_DeInit
+
+2026-04-22 15:38:39.380 INFO  [39132] [CTimerProxy::Regitser@64] Register timer event,Handle[0],pUserData[000001BFBA4D9360]
+
+2026-04-22 15:38:39.380 INFO  [39132] [CCommFactory::SetLogPath@83] set log---call register timer,timer id[0],this[000001BFBA4D9360],pLogPath[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug\log\SDK],m_enumDefultLogLevel[2]
+
+2026-04-22 15:38:39.380 INFO  [39132] [CCommFactory::UpdateLogPath@236] current Path[E]
+
+2026-04-22 15:38:39.403 INFO  [39132] [CMemPool::CMemPool@23] index i[0]---size[1024]
+
+2026-04-22 15:38:39.403 INFO  [39132] [CMemPool::CMemPool@23] index i[1]---size[2048]
+
+2026-04-22 15:38:39.403 INFO  [39132] [CMemPool::CMemPool@23] index i[2]---size[10240]
+
+2026-04-22 15:38:39.403 INFO  [39132] [CMemPool::CMemPool@23] index i[3]---size[65536]
+
+2026-04-22 15:38:39.403 INFO  [39132] [CMemPool::CMemPool@23] index i[4]---size[524288]
+
+2026-04-22 15:38:39.403 INFO  [39132] [CMemPool::CMemPool@23] index i[5]---size[1048576]
+
+2026-04-22 15:38:39.403 INFO  [39132] [CMemPool::CMemPool@23] index i[6]---size[2097152]
+
+2026-04-22 15:38:39.404 INFO  [39132] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:38:39.404 INFO  [39132] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:38:39.404 INFO  [39132] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:38:39.404 INFO  [39132] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:38:39.404 INFO  [39132] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:38:39.404 INFO  [39132] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:38:39.404 INFO  [39132] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:38:39.404 INFO  [39132] [CMQCommBaseClient::BindPort@210] bind localip[127.0.0.1],port[56363]
+
+2026-04-22 15:38:39.404 INFO  [39132] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:38:39.404 INFO  [39132] [CMQCommBaseClient::BindPort@210] bind localip[127.0.0.1],port[56364]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CMQCommRequire::Connect@211] want connect to server[tcp://127.0.0.1:5556],nConnTimeout[10000],client type[Require],m_dwSpliceSendBufSize[10240]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CMQCommBaseClient::Connect@245] mq client type[5]---connect server[127.0.0.1:5556], nLoopTimes[2000],nConnTimeout[10000]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CMQCommBaseClient::ConnectToServer@828] connect to server succ[127.0.0.1]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CMQCommBaseClient::Connect@295] connect to server[tcp://127.0.0.1:5556] success,socket id[3460]-[0000000000000D84],local ipaddr[127.0.0.1:56364],pIocp[000001BFBA4CC390]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CMQCommBaseClient::RegisterToServer@662] Send Register cmd succ,wait rsp timeout[5000],socketid[3460]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CMQCommBaseClient::RegisterToServer@667] recv register rsp status[1],socket id[3460],m_strServerAddr[tcp://127.0.0.1:5556]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CTimerProxy::Regitser@64] Register timer event,Handle[1],pUserData[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CMQCommBaseClient::RegitserHeartBeatTimer@551] call register heartbeat timer. timerid[1],client[000001BFBD61DCA0]---nClientType[5]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CMQCommRequire::Connect@243] want connect to server[tcp://127.0.0.1:5556] succ,client type[Require]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[3460]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CIocpTcpTransmitter::Close@195] want close socket,socket id[3460]
+
+2026-04-22 15:38:39.407 ERROR [46592] [pfnProcSocketExcpetion@70] Recv Connect Error 1236,Socket ID[3460]---[0000000000000D84]
+
+2026-04-22 15:38:39.407 INFO  [46592] [ProcConnExceptionCB@23] Recv PConnExceptionCB,pCommObj[000001BFBD61DCA0] error code[1236]
+
+2026-04-22 15:38:39.407 INFO  [46592] [CMQCommBaseClient::ProcessConnException@356] post connect exception ,pIocpTcp[000001BFBA4CC390],nErrCode[1236],this[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [46592] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[1],client[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [46592] [CTimerProxy::Unregister@73] Unegister timer event,Handle[1]
+
+2026-04-22 15:38:39.407 INFO  [46592] [CTimerProxy::Unregister@78] erase timer event,Handle[1] succ!!!
+
+2026-04-22 15:38:39.407 INFO  [46592] [CTimerProxy::Unregister@86] Unegister timer event,Handle[1]---end
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[8],Reconnect Event id[9],--client[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommRequire::~CMQCommRequire@19] call ~CMQCommRequire,this[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[3460]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommRequire::~CMQCommRequire@21] call ~CMQCommRequire,this[000001BFBD61DCA0]---end
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000001BFBD61DCA0]xxxx
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBD61DCA0]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000001BFBD61DCA0]---end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[-1]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[6],Reconnect Event id[7],--client[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommRequire::~CMQCommRequire@19] call ~CMQCommRequire,this[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[-1]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommRequire::~CMQCommRequire@21] call ~CMQCommRequire,this[000001BFBD61DEF0]---end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000001BFBD61DEF0]xxxx
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBD61DEF0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000001BFBD61DEF0]---end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[2],Reconnect Event id[3],--client[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[000001BFBA50BEE0]---end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000001BFBA50BEE0]xxxx
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBA50BEE0]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000001BFBA50BEE0]---end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[0],Reconnect Event id[1],--client[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[000001BFBA508140]---end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000001BFBA508140]xxxx
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBA508140]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000001BFBA508140]---end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[4],Reconnect Event id[5],--client[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[000001BFBA507F20]---end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000001BFBA507F20]xxxx
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000001BFBA507F20]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000001BFBA507F20]---end
+
+2026-04-22 15:38:39.426 INFO  [39132] [CTimerProxy::Unregister@73] Unegister timer event,Handle[0]
+
+2026-04-22 15:38:39.426 INFO  [39132] [CTimerProxy::Unregister@78] erase timer event,Handle[0] succ!!!
+
+2026-04-22 15:38:39.426 INFO  [39132] [CTimerProxy::Unregister@86] Unegister timer event,Handle[0]---end
+
+2026-04-22 15:38:39.426 INFO  [39132] [CCommFactory::DeinitSpdLog@226] ------calll Spdlog_DeInit
+
+2026-04-22 15:41:40.814 INFO  [61248] [CTimerProxy::Regitser@64] Register timer event,Handle[0],pUserData[0000023301C676F0]
+
+2026-04-22 15:41:40.815 INFO  [61248] [CCommFactory::SetLogPath@83] set log---call register timer,timer id[0],this[0000023301C676F0],pLogPath[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug\log\SDK],m_enumDefultLogLevel[2]
+
+2026-04-22 15:41:40.815 INFO  [61248] [CCommFactory::UpdateLogPath@236] current Path[E]
+
+2026-04-22 15:41:40.845 INFO  [61248] [CMemPool::CMemPool@23] index i[0]---size[1024]
+
+2026-04-22 15:41:40.845 INFO  [61248] [CMemPool::CMemPool@23] index i[1]---size[2048]
+
+2026-04-22 15:41:40.845 INFO  [61248] [CMemPool::CMemPool@23] index i[2]---size[10240]
+
+2026-04-22 15:41:40.845 INFO  [61248] [CMemPool::CMemPool@23] index i[3]---size[65536]
+
+2026-04-22 15:41:40.845 INFO  [61248] [CMemPool::CMemPool@23] index i[4]---size[524288]
+
+2026-04-22 15:41:40.845 INFO  [61248] [CMemPool::CMemPool@23] index i[5]---size[1048576]
+
+2026-04-22 15:41:40.845 INFO  [61248] [CMemPool::CMemPool@23] index i[6]---size[2097152]
+
+2026-04-22 15:41:40.846 INFO  [61248] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:41:40.846 INFO  [61248] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:41:40.846 INFO  [61248] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:41:40.846 INFO  [61248] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:41:40.846 INFO  [61248] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:41:40.846 INFO  [61248] [CMQCommSubject::CMQCommSubject@12] CMQCommSubject loadLog: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommBaseClient::BindPort@210] bind localip[127.0.0.1],port[56739]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommBaseClient::CMQCommBaseClient@145] CMQCommBaseClient: Get work path is[E:\项目\深圳\昂纳\FAU_耦合设备\ONet.FAU.Tx.16_128\ONet.FAU.Tx.16_128\bin\x64\Debug].
+
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommBaseClient::BindPort@210] bind localip[127.0.0.1],port[56740]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommRequire::Connect@211] want connect to server[tcp://127.0.0.1:5556],nConnTimeout[10000],client type[Require],m_dwSpliceSendBufSize[10240]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommBaseClient::Connect@245] mq client type[5]---connect server[127.0.0.1:5556], nLoopTimes[2000],nConnTimeout[10000]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommBaseClient::ConnectToServer@828] connect to server succ[127.0.0.1]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommBaseClient::Connect@295] connect to server[tcp://127.0.0.1:5556] success,socket id[3528]-[0000000000000DC8],local ipaddr[127.0.0.1:56740],pIocp[0000023301D5E220]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommBaseClient::RegisterToServer@662] Send Register cmd succ,wait rsp timeout[5000],socketid[3528]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommBaseClient::RegisterToServer@667] recv register rsp status[1],socket id[3528],m_strServerAddr[tcp://127.0.0.1:5556]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CTimerProxy::Regitser@64] Register timer event,Handle[1],pUserData[0000023306A6B040]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommBaseClient::RegitserHeartBeatTimer@551] call register heartbeat timer. timerid[1],client[0000023306A6B040]---nClientType[5]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CMQCommRequire::Connect@243] want connect to server[tcp://127.0.0.1:5556] succ,client type[Require]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[3528]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CIocpTcpTransmitter::Close@195] want close socket,socket id[3528]
+
+2026-04-22 15:41:40.850 ERROR [58420] [pfnProcSocketExcpetion@70] Recv Connect Error 1236,Socket ID[3528]---[0000000000000DC8]
+
+2026-04-22 15:41:40.850 INFO  [58420] [ProcConnExceptionCB@23] Recv PConnExceptionCB,pCommObj[0000023306A6B040] error code[1236]
+
+2026-04-22 15:41:40.850 INFO  [58420] [CMQCommBaseClient::ProcessConnException@356] post connect exception ,pIocpTcp[0000023301D5E220],nErrCode[1236],this[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [58420] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[1],client[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [58420] [CTimerProxy::Unregister@73] Unegister timer event,Handle[1]
+
+2026-04-22 15:41:40.850 INFO  [58420] [CTimerProxy::Unregister@78] erase timer event,Handle[1] succ!!!
+
+2026-04-22 15:41:40.850 INFO  [58420] [CTimerProxy::Unregister@86] Unegister timer event,Handle[1]---end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[8],Reconnect Event id[9],--client[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommRequire::~CMQCommRequire@19] call ~CMQCommRequire,this[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[3528]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommRequire::~CMQCommRequire@21] call ~CMQCommRequire,this[0000023306A6B040]---end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[0000023306A6B040]xxxx
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000023306A6B040]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[0000023306A6B040]---end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[-1]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[6],Reconnect Event id[7],--client[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommRequire::~CMQCommRequire@19] call ~CMQCommRequire,this[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommRequire::Disconnect@252] call disconnect to server,socket id[-1]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommRequire::~CMQCommRequire@21] call ~CMQCommRequire,this[0000023306A6BBD0]---end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[0000023306A6BBD0]xxxx
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[0000023306A6BBD0]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[0000023306A6BBD0]---end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[2],Reconnect Event id[3],--client[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[000002330691C730]---end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000002330691C730]xxxx
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002330691C730]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000002330691C730]---end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[0],Reconnect Event id[1],--client[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[000002330691CB70]---end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000002330691CB70]xxxx
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002330691CB70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000002330691CB70]---end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[4],Reconnect Event id[5],--client[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommSubject::~CMQCommSubject@19] call ~CMQCommSubject,this[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommSubject::~CMQCommSubject@22] call ~CMQCommSubject,this[000002330691DC70]---end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@154] call ~CMQCommBaseClient,this[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@156] call ~CMQCommBaseClient,this[000002330691DC70]xxxx
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@317] inter Disconnect HPR_AtomicAdd is 0,this[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::Disconnect@334] inter Disconnect ,this[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnegisterEvent@528] call unregister event. socket excpetion event id[-1],Reconnect Event id[-1],--client[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::UnregisterHeartBeatTimer@556] call unregister heartbeat timer. timerid[-1],client[000002330691DC70]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CMQCommBaseClient::~CMQCommBaseClient@182] call ~CMQCommBaseClient,this[000002330691DC70]---end
+
+2026-04-22 15:41:40.873 INFO  [61248] [CTimerProxy::Unregister@73] Unegister timer event,Handle[0]
+
+2026-04-22 15:41:40.873 INFO  [61248] [CTimerProxy::Unregister@78] erase timer event,Handle[0] succ!!!
+
+2026-04-22 15:41:40.873 INFO  [61248] [CTimerProxy::Unregister@86] Unegister timer event,Handle[0]---end
+
+2026-04-22 15:41:40.873 INFO  [61248] [CCommFactory::DeinitSpdLog@226] ------calll Spdlog_DeInit
+

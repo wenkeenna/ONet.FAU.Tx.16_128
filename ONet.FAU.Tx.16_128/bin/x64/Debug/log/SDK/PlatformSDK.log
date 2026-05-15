@@ -2320,3 +2320,1035 @@
 
 2026-04-21 15:09:51.165 INFO  [26564] [CClientManager::PF_DeInitPrintLog@6945] SDK: Destroy Zmq context end.
 
+2026-04-22 15:33:25.510 INFO  [47424] [CServerManager::PrintLog@36739] ======================================== 4.2.0 build Jun  2 2023 16:56:11 Start Print Log ========================================
+
+2026-04-22 15:33:25.522 INFO  [47424] [CClientManager::Init@5426] begin.
+
+2026-04-22 15:33:25.522 INFO  [47424] [CClientManager::DeInitPair@5713] start
+
+2026-04-22 15:33:25.522 INFO  [47424] [CClientManager::DeInitPair@5727] end
+
+2026-04-22 15:33:25.522 INFO  [47424] [CClientManager::DeInitPair@5713] start
+
+2026-04-22 15:33:25.522 INFO  [47424] [CClientManager::DeInitPair@5727] end
+
+2026-04-22 15:33:25.522 INFO  [47424] [CClientManager::Init@5444] end.nRet[0]
+
+2026-04-22 15:33:25.522 INFO  [47424] [CClientManager::PF_DetectAndStartServer@12507] begin.
+
+2026-04-22 15:33:25.522 INFO  [47424] [CServerManager::DetectService@34464] SDK: DetectService by OpenSCManager start
+
+2026-04-22 15:33:25.522 INFO  [47424] [CServerManager::DetectService@34529] end
+
+2026-04-22 15:33:25.522 INFO  [47424] [CClientManager::PF_DetectAndStartServer@12702] end.
+
+2026-04-22 15:33:25.523 INFO  [47424] [CClientManager::PF_CreateHandle@1447] begin. nHandleType:[0]
+
+2026-04-22 15:33:25.532 INFO  [47424] [CClientManager::PF_CreateHandle@1475] SDK: Third software start server by exe.
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::SM_Init@388] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInit@23753] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::StopModuResSub@25260] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::StopModuResSub@25270] end
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::StopModuReportSub@25157] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::StopModuReportSub@25167] end
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::StopSub@25034] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::StopSub@25044] end
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:33:25.532 INFO  [47424] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:33:25.532 WARN  [47424] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::DeInit@23797] end
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::InitReadSendBuffer@23808] start
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::InitReadSendBuffer@23855] end
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::SM_Init@423] SDK: InitReadSendBuffer success.pstPlatformBasicInfo->nRepIp[0x7f000001],nport[5556]
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::SM_Init@442] SDK: GetAdapterInfo success. Info:[127.0.0.1]
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::InitSub@23962] start
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:33:25.533 INFO  [47424] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::InitSub@24032] end
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::SM_Init@480] SDK: InitSub success.
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::InitModuReportSub@24067] start
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::InitModuReportSub@24120] end
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::SM_Init@489] SDK: InitModuReportSub success.
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::InitProxySub@24155] start
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::InitProxySub@24223] end
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::SM_Init@498] SDK: InitProxySub success.
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::InitHeartPair@24539] start
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::InitHeartPair@24574] SDK: request heartbeat addr[tcp://127.0.0.1:65067]
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::InitHeartPair@24645] end
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::SM_Init@506] SDK: InitHeartPair success.
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::InitReq@24259] start
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:33:25.547 WARN  [47424] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:33:25.547 INFO  [47424] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:33:25.548 INFO  [47424] [CServerManager::InitReq@24316] Bind address:[tcp://127.0.0.1:65068]
+
+2026-04-22 15:33:25.548 INFO  [47424] [CServerManager::InitReq@24320] Bind address:[tcp://127.0.0.1:65068], nRet:[0]
+
+2026-04-22 15:33:25.548 INFO  [47424] [CServerManager::InitReq@24324] SetSocketOpt, nRet:[0]
+
+2026-04-22 15:33:25.548 INFO  [47424] [CServerManager::InitReq@24328] SetSocketOpt, nRet:[0]
+
+2026-04-22 15:33:25.550 INFO  [47424] [CServerManager::InitReq@24404] SDK:Connect addr:[tcp://127.0.0.1:5556], nRet:[0]
+
+2026-04-22 15:33:25.550 INFO  [47424] [CServerManager::InitReq@24414] SDK: Connect to vmserver rep[tcp://127.0.0.1:5556]
+
+2026-04-22 15:33:25.550 INFO  [47424] [CServerManager::GetProxyRegisterState@23328] start.
+
+2026-04-22 15:33:25.554 ERROR [47424] [CServerManager::GetProxyRegisterState@23380] Server: recv msg is not OK.
+
+2026-04-22 15:33:25.556 ERROR [47424] [CServerManager::GetProxyRegisterState@23396] catch... nRet = [e0000700]
+
+2026-04-22 15:33:25.556 ERROR [47424] [CServerManager::InitReq@24420] SDK: GetProxyRegisterState fail. nRet = [e0000700]
+
+2026-04-22 15:33:25.556 ERROR [47424] [CServerManager::InitReq@24493] catch... nRet = [e0000700]
+
+2026-04-22 15:33:25.556 INFO  [47424] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:33:25.556 INFO  [47424] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:33:25.556 INFO  [47424] [CServerManager::UnRegisterModule@24978] SDK: New handle created.
+
+2026-04-22 15:33:25.556 INFO  [47424] [CServerManager::UnRegisterModule@24999] end
+
+2026-04-22 15:33:25.556 INFO  [47424] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:33:25.556 INFO  [47424] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:33:25.558 ERROR [47424] [CServerManager::SM_Init@512] SDK: InitReq fail. nRet = [e0000700]
+
+2026-04-22 15:33:25.558 ERROR [47424] [CServerManager::SM_Init@576] catch... nRet = [e0000700]
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInit@23753] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::StopModuResSub@25260] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::StopModuResSub@25270] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::StopModuReportSub@25157] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::StopModuReportSub@25167] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::StopSub@25034] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::StopSub@25044] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:33:25.558 WARN  [47424] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:33:25.558 INFO  [47424] [CServerManager::DeInit@23797] end
+
+2026-04-22 15:33:25.558 ERROR [47424] [CClientManager::PF_CreateHandle@1499] SDK: PF_CreateHandle SM_Init fail. nRet = [e0000700]
+
+2026-04-22 15:33:25.559 INFO  [47424] [CClientManager::PF_DeInitPrintLog@6940] SDK: Destroy Zmq context start.
+
+2026-04-22 15:33:25.559 INFO  [47424] [CClientManager::PF_DeInitPrintLog@6945] SDK: Destroy Zmq context end.
+
+2026-04-22 15:36:43.496 INFO  [43728] [CServerManager::PrintLog@36739] ======================================== 4.2.0 build Jun  2 2023 16:56:11 Start Print Log ========================================
+
+2026-04-22 15:36:43.513 INFO  [43728] [CClientManager::Init@5426] begin.
+
+2026-04-22 15:36:43.513 INFO  [43728] [CClientManager::DeInitPair@5713] start
+
+2026-04-22 15:36:43.513 INFO  [43728] [CClientManager::DeInitPair@5727] end
+
+2026-04-22 15:36:43.513 INFO  [43728] [CClientManager::DeInitPair@5713] start
+
+2026-04-22 15:36:43.513 INFO  [43728] [CClientManager::DeInitPair@5727] end
+
+2026-04-22 15:36:43.513 INFO  [43728] [CClientManager::Init@5444] end.nRet[0]
+
+2026-04-22 15:36:43.513 INFO  [43728] [CClientManager::PF_DetectAndStartServer@12507] begin.
+
+2026-04-22 15:36:43.513 INFO  [43728] [CServerManager::DetectService@34464] SDK: DetectService by OpenSCManager start
+
+2026-04-22 15:36:43.513 INFO  [43728] [CServerManager::DetectService@34529] end
+
+2026-04-22 15:36:43.513 INFO  [43728] [CClientManager::PF_DetectAndStartServer@12702] end.
+
+2026-04-22 15:36:43.513 INFO  [43728] [CClientManager::PF_CreateHandle@1447] begin. nHandleType:[0]
+
+2026-04-22 15:36:43.523 INFO  [43728] [CClientManager::PF_CreateHandle@1475] SDK: Third software start server by exe.
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::SM_Init@388] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInit@23753] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::StopModuResSub@25260] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::StopModuResSub@25270] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::StopModuReportSub@25157] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::StopModuReportSub@25167] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::StopSub@25034] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::StopSub@25044] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:36:43.523 WARN  [43728] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:36:43.523 INFO  [43728] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:36:43.524 INFO  [43728] [CServerManager::DeInit@23797] end
+
+2026-04-22 15:36:43.524 INFO  [43728] [CServerManager::InitReadSendBuffer@23808] start
+
+2026-04-22 15:36:43.524 INFO  [43728] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:36:43.524 INFO  [43728] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:36:43.524 INFO  [43728] [CServerManager::InitReadSendBuffer@23855] end
+
+2026-04-22 15:36:43.524 INFO  [43728] [CServerManager::SM_Init@423] SDK: InitReadSendBuffer success.pstPlatformBasicInfo->nRepIp[0x7f000001],nport[5556]
+
+2026-04-22 15:36:43.524 INFO  [43728] [CServerManager::SM_Init@442] SDK: GetAdapterInfo success. Info:[127.0.0.1]
+
+2026-04-22 15:36:43.524 INFO  [43728] [CServerManager::InitSub@23962] start
+
+2026-04-22 15:36:43.524 INFO  [43728] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:36:43.524 INFO  [43728] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:36:43.538 INFO  [43728] [CServerManager::InitSub@24032] end
+
+2026-04-22 15:36:43.538 INFO  [43728] [CServerManager::SM_Init@480] SDK: InitSub success.
+
+2026-04-22 15:36:43.538 INFO  [43728] [CServerManager::InitModuReportSub@24067] start
+
+2026-04-22 15:36:43.538 INFO  [43728] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:36:43.538 INFO  [43728] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitModuReportSub@24120] end
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::SM_Init@489] SDK: InitModuReportSub success.
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitProxySub@24155] start
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitProxySub@24223] end
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::SM_Init@498] SDK: InitProxySub success.
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitHeartPair@24539] start
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitHeartPair@24574] SDK: request heartbeat addr[tcp://127.0.0.1:62426]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitHeartPair@24645] end
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::SM_Init@506] SDK: InitHeartPair success.
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitReq@24259] start
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:36:43.539 WARN  [43728] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitReq@24316] Bind address:[tcp://127.0.0.1:62427]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitReq@24320] Bind address:[tcp://127.0.0.1:62427], nRet:[0]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitReq@24324] SetSocketOpt, nRet:[0]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitReq@24328] SetSocketOpt, nRet:[0]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitReq@24404] SDK:Connect addr:[tcp://127.0.0.1:5556], nRet:[0]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::InitReq@24414] SDK: Connect to vmserver rep[tcp://127.0.0.1:5556]
+
+2026-04-22 15:36:43.539 INFO  [43728] [CServerManager::GetProxyRegisterState@23328] start.
+
+2026-04-22 15:36:43.541 ERROR [43728] [CServerManager::GetProxyRegisterState@23380] Server: recv msg is not OK.
+
+2026-04-22 15:36:43.544 ERROR [43728] [CServerManager::GetProxyRegisterState@23396] catch... nRet = [e0000700]
+
+2026-04-22 15:36:43.544 ERROR [43728] [CServerManager::InitReq@24420] SDK: GetProxyRegisterState fail. nRet = [e0000700]
+
+2026-04-22 15:36:43.544 ERROR [43728] [CServerManager::InitReq@24493] catch... nRet = [e0000700]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::UnRegisterModule@24978] SDK: New handle created.
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::UnRegisterModule@24999] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:36:43.544 ERROR [43728] [CServerManager::SM_Init@512] SDK: InitReq fail. nRet = [e0000700]
+
+2026-04-22 15:36:43.544 ERROR [43728] [CServerManager::SM_Init@576] catch... nRet = [e0000700]
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInit@23753] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::StopModuResSub@25260] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::StopModuResSub@25270] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::StopModuReportSub@25157] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::StopModuReportSub@25167] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::StopSub@25034] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::StopSub@25044] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:36:43.544 WARN  [43728] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:36:43.544 INFO  [43728] [CServerManager::DeInit@23797] end
+
+2026-04-22 15:36:43.544 ERROR [43728] [CClientManager::PF_CreateHandle@1499] SDK: PF_CreateHandle SM_Init fail. nRet = [e0000700]
+
+2026-04-22 15:36:43.545 INFO  [43728] [CClientManager::PF_DeInitPrintLog@6940] SDK: Destroy Zmq context start.
+
+2026-04-22 15:36:43.545 INFO  [43728] [CClientManager::PF_DeInitPrintLog@6945] SDK: Destroy Zmq context end.
+
+2026-04-22 15:38:39.369 INFO  [39132] [CServerManager::PrintLog@36739] ======================================== 4.2.0 build Jun  2 2023 16:56:11 Start Print Log ========================================
+
+2026-04-22 15:38:39.380 INFO  [39132] [CClientManager::Init@5426] begin.
+
+2026-04-22 15:38:39.380 INFO  [39132] [CClientManager::DeInitPair@5713] start
+
+2026-04-22 15:38:39.380 INFO  [39132] [CClientManager::DeInitPair@5727] end
+
+2026-04-22 15:38:39.380 INFO  [39132] [CClientManager::DeInitPair@5713] start
+
+2026-04-22 15:38:39.380 INFO  [39132] [CClientManager::DeInitPair@5727] end
+
+2026-04-22 15:38:39.380 INFO  [39132] [CClientManager::Init@5444] end.nRet[0]
+
+2026-04-22 15:38:39.380 INFO  [39132] [CClientManager::PF_DetectAndStartServer@12507] begin.
+
+2026-04-22 15:38:39.380 INFO  [39132] [CServerManager::DetectService@34464] SDK: DetectService by OpenSCManager start
+
+2026-04-22 15:38:39.381 INFO  [39132] [CServerManager::DetectService@34529] end
+
+2026-04-22 15:38:39.381 INFO  [39132] [CClientManager::PF_DetectAndStartServer@12702] end.
+
+2026-04-22 15:38:39.381 INFO  [39132] [CClientManager::PF_CreateHandle@1447] begin. nHandleType:[0]
+
+2026-04-22 15:38:39.391 INFO  [39132] [CClientManager::PF_CreateHandle@1475] SDK: Third software start server by exe.
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::SM_Init@388] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInit@23753] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::StopModuResSub@25260] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::StopModuResSub@25270] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::StopModuReportSub@25157] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::StopModuReportSub@25167] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::StopSub@25034] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::StopSub@25044] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:38:39.391 WARN  [39132] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInit@23797] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::InitReadSendBuffer@23808] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::InitReadSendBuffer@23855] end
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::SM_Init@423] SDK: InitReadSendBuffer success.pstPlatformBasicInfo->nRepIp[0x7f000001],nport[5556]
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::SM_Init@442] SDK: GetAdapterInfo success. Info:[127.0.0.1]
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::InitSub@23962] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:38:39.391 INFO  [39132] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitSub@24032] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::SM_Init@480] SDK: InitSub success.
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitModuReportSub@24067] start
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitModuReportSub@24120] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::SM_Init@489] SDK: InitModuReportSub success.
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitProxySub@24155] start
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitProxySub@24223] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::SM_Init@498] SDK: InitProxySub success.
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitHeartPair@24539] start
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitHeartPair@24574] SDK: request heartbeat addr[tcp://127.0.0.1:56363]
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitHeartPair@24645] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::SM_Init@506] SDK: InitHeartPair success.
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitReq@24259] start
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:38:39.404 WARN  [39132] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitReq@24316] Bind address:[tcp://127.0.0.1:56364]
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitReq@24320] Bind address:[tcp://127.0.0.1:56364], nRet:[0]
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitReq@24324] SetSocketOpt, nRet:[0]
+
+2026-04-22 15:38:39.404 INFO  [39132] [CServerManager::InitReq@24328] SetSocketOpt, nRet:[0]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CServerManager::InitReq@24404] SDK:Connect addr:[tcp://127.0.0.1:5556], nRet:[0]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CServerManager::InitReq@24414] SDK: Connect to vmserver rep[tcp://127.0.0.1:5556]
+
+2026-04-22 15:38:39.406 INFO  [39132] [CServerManager::GetProxyRegisterState@23328] start.
+
+2026-04-22 15:38:39.407 ERROR [39132] [CServerManager::GetProxyRegisterState@23380] Server: recv msg is not OK.
+
+2026-04-22 15:38:39.407 ERROR [39132] [CServerManager::GetProxyRegisterState@23396] catch... nRet = [e0000700]
+
+2026-04-22 15:38:39.407 ERROR [39132] [CServerManager::InitReq@24420] SDK: GetProxyRegisterState fail. nRet = [e0000700]
+
+2026-04-22 15:38:39.407 ERROR [39132] [CServerManager::InitReq@24493] catch... nRet = [e0000700]
+
+2026-04-22 15:38:39.407 INFO  [39132] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:38:39.407 INFO  [39132] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:38:39.407 INFO  [39132] [CServerManager::UnRegisterModule@24978] SDK: New handle created.
+
+2026-04-22 15:38:39.407 INFO  [39132] [CServerManager::UnRegisterModule@24999] end
+
+2026-04-22 15:38:39.407 INFO  [39132] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:38:39.407 INFO  [39132] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:38:39.407 INFO  [39132] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:38:39.407 ERROR [39132] [CServerManager::SM_Init@512] SDK: InitReq fail. nRet = [e0000700]
+
+2026-04-22 15:38:39.408 ERROR [39132] [CServerManager::SM_Init@576] catch... nRet = [e0000700]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInit@23753] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::StopModuResSub@25260] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::StopModuResSub@25270] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::StopModuReportSub@25157] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::StopModuReportSub@25167] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::StopSub@25034] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::StopSub@25044] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:38:39.408 WARN  [39132] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:38:39.408 INFO  [39132] [CServerManager::DeInit@23797] end
+
+2026-04-22 15:38:39.408 ERROR [39132] [CClientManager::PF_CreateHandle@1499] SDK: PF_CreateHandle SM_Init fail. nRet = [e0000700]
+
+2026-04-22 15:38:39.408 INFO  [39132] [CClientManager::PF_DeInitPrintLog@6940] SDK: Destroy Zmq context start.
+
+2026-04-22 15:38:39.408 INFO  [39132] [CClientManager::PF_DeInitPrintLog@6945] SDK: Destroy Zmq context end.
+
+2026-04-22 15:41:40.800 INFO  [61248] [CServerManager::PrintLog@36739] ======================================== 4.2.0 build Jun  2 2023 16:56:11 Start Print Log ========================================
+
+2026-04-22 15:41:40.815 INFO  [61248] [CClientManager::Init@5426] begin.
+
+2026-04-22 15:41:40.815 INFO  [61248] [CClientManager::DeInitPair@5713] start
+
+2026-04-22 15:41:40.815 INFO  [61248] [CClientManager::DeInitPair@5727] end
+
+2026-04-22 15:41:40.815 INFO  [61248] [CClientManager::DeInitPair@5713] start
+
+2026-04-22 15:41:40.815 INFO  [61248] [CClientManager::DeInitPair@5727] end
+
+2026-04-22 15:41:40.815 INFO  [61248] [CClientManager::Init@5444] end.nRet[0]
+
+2026-04-22 15:41:40.815 INFO  [61248] [CClientManager::PF_DetectAndStartServer@12507] begin.
+
+2026-04-22 15:41:40.815 INFO  [61248] [CServerManager::DetectService@34464] SDK: DetectService by OpenSCManager start
+
+2026-04-22 15:41:40.815 INFO  [61248] [CServerManager::DetectService@34529] end
+
+2026-04-22 15:41:40.815 INFO  [61248] [CClientManager::PF_DetectAndStartServer@12702] end.
+
+2026-04-22 15:41:40.815 INFO  [61248] [CClientManager::PF_CreateHandle@1447] begin. nHandleType:[0]
+
+2026-04-22 15:41:40.826 INFO  [61248] [CClientManager::PF_CreateHandle@1475] SDK: Third software start server by exe.
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::SM_Init@388] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInit@23753] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::StopModuResSub@25260] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::StopModuResSub@25270] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::StopModuReportSub@25157] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::StopModuReportSub@25167] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::StopSub@25034] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::StopSub@25044] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:41:40.826 WARN  [61248] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInit@23797] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::InitReadSendBuffer@23808] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::InitReadSendBuffer@23855] end
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::SM_Init@423] SDK: InitReadSendBuffer success.pstPlatformBasicInfo->nRepIp[0x7f000001],nport[5556]
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::SM_Init@442] SDK: GetAdapterInfo success. Info:[127.0.0.1]
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::InitSub@23962] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:41:40.826 INFO  [61248] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::InitSub@24032] end
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::SM_Init@480] SDK: InitSub success.
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::InitModuReportSub@24067] start
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::InitModuReportSub@24120] end
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::SM_Init@489] SDK: InitModuReportSub success.
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::InitProxySub@24155] start
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::InitProxySub@24223] end
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::SM_Init@498] SDK: InitProxySub success.
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::InitHeartPair@24539] start
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:41:40.846 INFO  [61248] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::InitHeartPair@24574] SDK: request heartbeat addr[tcp://127.0.0.1:56739]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::InitHeartPair@24645] end
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::SM_Init@506] SDK: InitHeartPair success.
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::InitReq@24259] start
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:41:40.847 WARN  [61248] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::InitReq@24316] Bind address:[tcp://127.0.0.1:56740]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::InitReq@24320] Bind address:[tcp://127.0.0.1:56740], nRet:[0]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::InitReq@24324] SetSocketOpt, nRet:[0]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::InitReq@24328] SetSocketOpt, nRet:[0]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::InitReq@24404] SDK:Connect addr:[tcp://127.0.0.1:5556], nRet:[0]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::InitReq@24414] SDK: Connect to vmserver rep[tcp://127.0.0.1:5556]
+
+2026-04-22 15:41:40.847 INFO  [61248] [CServerManager::GetProxyRegisterState@23328] start.
+
+2026-04-22 15:41:40.850 ERROR [61248] [CServerManager::GetProxyRegisterState@23380] Server: recv msg is not OK.
+
+2026-04-22 15:41:40.850 ERROR [61248] [CServerManager::GetProxyRegisterState@23396] catch... nRet = [e0000700]
+
+2026-04-22 15:41:40.850 ERROR [61248] [CServerManager::InitReq@24420] SDK: GetProxyRegisterState fail. nRet = [e0000700]
+
+2026-04-22 15:41:40.850 ERROR [61248] [CServerManager::InitReq@24493] catch... nRet = [e0000700]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::UnRegisterModule@24978] SDK: New handle created.
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::UnRegisterModule@24999] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:41:40.850 ERROR [61248] [CServerManager::SM_Init@512] SDK: InitReq fail. nRet = [e0000700]
+
+2026-04-22 15:41:40.850 ERROR [61248] [CServerManager::SM_Init@576] catch... nRet = [e0000700]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInit@23753] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::StopModuResSub@25260] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::StopModuResSub@25270] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::StopModuReportSub@25157] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::StopModuReportSub@25167] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::StopSub@25034] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::StopSub@25044] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitReadSendBuffer@23866] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitReadSendBuffer@23888] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitHeartPair@24652] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::StopHeartPair@26226] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::StopHeartPair@26234] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitHeartPair@24667] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitModuReportSub@24131] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitModuReportSub@24145] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitSub@24043] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitSub@24057] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitProxySub@24234] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitProxySub@24249] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitReq@24509] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::UnRegisterModule@24967] start
+
+2026-04-22 15:41:40.850 WARN  [61248] [CServerManager::UnRegisterModule@24970] SDK: m_hCommunicationReq is NULL.
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::NotifyServerDestroy4Export@12395] start
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::NotifyServerDestroy4Export@12411] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInitReq@24534] end
+
+2026-04-22 15:41:40.850 INFO  [61248] [CServerManager::DeInit@23797] end
+
+2026-04-22 15:41:40.850 ERROR [61248] [CClientManager::PF_CreateHandle@1499] SDK: PF_CreateHandle SM_Init fail. nRet = [e0000700]
+
+2026-04-22 15:41:40.850 INFO  [61248] [CClientManager::PF_DeInitPrintLog@6940] SDK: Destroy Zmq context start.
+
+2026-04-22 15:41:40.850 INFO  [61248] [CClientManager::PF_DeInitPrintLog@6945] SDK: Destroy Zmq context end.
+
