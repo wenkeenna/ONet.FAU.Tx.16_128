@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -115,10 +116,17 @@ namespace ONet.FAU.Tx16_128.Extension.Services.Coupling
                 //var axis_Rx = motionSystem.GetAxis(MotionAxisNames.RightX);
                 //var axis_Ry = motionSystem.GetAxis(MotionAxisNames.RightY);
 
-                var LX_offset = dataBinding.Get("点胶补偿", "LeftX").ToDouble();
-                var LY_offset = dataBinding.Get("点胶补偿", "LeftY").ToDouble();
-                var RX_offset = dataBinding.Get("点胶补偿", "RightX").ToDouble();
-                var RY_offset = dataBinding.Get("点胶补偿", "RightY").ToDouble();
+                var LX_P1_offset = dataBinding.Get("点胶补偿", "Lx_P1").ToDouble();
+                var LY_P1_offset = dataBinding.Get("点胶补偿", "Ly_P1").ToDouble();
+
+                var LX_P2_offset = dataBinding.Get("点胶补偿", "Lx_P2").ToDouble();
+                var LY_P2_offset = dataBinding.Get("点胶补偿", "Ly_P2").ToDouble();
+
+                var RX_P1_offset = dataBinding.Get("点胶补偿", "Rx_P1").ToDouble();
+                var RY_P1_offset = dataBinding.Get("点胶补偿", "Ry_P1").ToDouble();
+
+                var RX_P2_offset = dataBinding.Get("点胶补偿", "Rx_P2").ToDouble();
+                var RY_P2_offset = dataBinding.Get("点胶补偿", "Ry_P2").ToDouble();
 
 
                 var BaseX = dataBinding.Get("点胶校准", "BaseX").ToDouble();
@@ -139,41 +147,68 @@ namespace ONet.FAU.Tx16_128.Extension.Services.Coupling
                 var RxPos = motionSystem.GetAxis(MotionAxisNames.RightX).GetPulsePosition();
                 var RyPos = motionSystem.GetAxis(MotionAxisNames.RightY).GetPulsePosition();
 
+                string path_R, path_L;
+
+
+
+                double resRx_P1, resRy_P1;
+                double resRx_P2, resRy_P2;
+
+
+                double resLx_P1, resLy_P1;
+                double resLx_P2, resLy_P2;
+
+                float GR_X, GR_Y;
+                float GL_X, GL_Y;
+
+                ParameterModel resModel;
+
+
                 switch (taskPara)
                 {
-                    case "G1:G2":
+                    case "G1:G6":
+
+                        path_L = "D:\\MyApp\\CalibrationFile\\Glue_Left_6.xml";
+                        calibration.AffineTransformation(path_L, "Glue_Left_6", (float)LxPos, (float)LyPos, out GL_X, out GL_Y);
+
+                        resLx_P1 = GL_X + LX_P1_offset + GxCalib;
+                        resLy_P1 = GL_Y + LY_P1_offset + GyCalib;
+
+                        resLx_P2 = GL_X + LX_P2_offset + GxCalib;
+                        resLy_P2 = GL_Y + LY_P2_offset + GyCalib;
 
 
-                        string pathRight1 = "D:\\MyApp\\CalibrationFile\\Glue_Right_G1.xml";
-                        calibration.AffineTransformation(pathRight1, "Glue_Right_G1", (float)RxPos, (float)RyPos, out var G1_X, out var G1_Y);
+                        path_R = "D:\\MyApp\\CalibrationFile\\Glue_Right_1.xml";
+                        calibration.AffineTransformation(path_R, "Glue_Right_1", (float)RxPos, (float)RyPos, out  GR_X, out  GR_Y);
 
-                        var resRx = G1_X + RX_offset + GxCalib;
-                        var resRy = G1_Y + RY_offset + GyCalib;
+                        resRx_P1 = GR_X + RX_P1_offset + GxCalib;
+                        resRy_P1 = GR_Y + RY_P1_offset + GyCalib;
 
-
-                        string pathLeft2 = "D:\\MyApp\\CalibrationFile\\Glue_Left_G2.xml";
-                        calibration.AffineTransformation(pathLeft2, "Glue_Left_G2", (float)LxPos, (float)LyPos, out var G2_X, out var G2_Y);
-
-                        var resLx = G2_X + LX_offset + GxCalib;
-                        var resLy = G2_Y + LY_offset + GyCalib;
+                        resRx_P2 = GR_X + RX_P2_offset + GxCalib;
+                        resRy_P2 = GR_Y + RY_P2_offset + GyCalib;
 
 
 
-                        var res = new ParameterModel()
+                        resModel = new ParameterModel()
                         {
                             Name = Parameter.UserDefined,
                             IsRoot = true,
                             IsAddDataBind = true,
                             Children = new ObservableCollection<ParameterModel>
                             {
-                                 ParameterModel.Create(Parameter.UserDefined,"LeftX",   resLx.ToString("F4"), ParameterType.Double),
-                                 ParameterModel.Create(Parameter.UserDefined,"LeftY",   resLy.ToString("F4"), ParameterType.Double),
-                                 ParameterModel.Create(Parameter.UserDefined,"RightX",  resRx.ToString("F4"), ParameterType.Double),
-                                 ParameterModel.Create(Parameter.UserDefined,"RightY",  resRy.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Lx_P1",   resLx_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ly_P1",   resLy_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Lx_P2",   resLx_P2.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ly_P2",   resLy_P2.ToString("F4"), ParameterType.Double),
+
+                                 ParameterModel.Create(Parameter.UserDefined,"Rx_P1",   resRx_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ry_P1",   resRy_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Rx_P2",   resRx_P2.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ry_P2",   resRy_P2.ToString("F4"), ParameterType.Double),
                             }
                         };
 
-                        dataBinding.SetModel(res);
+                        dataBinding.SetModel(resModel);
 
                         break;
 
@@ -181,43 +216,146 @@ namespace ONet.FAU.Tx16_128.Extension.Services.Coupling
 
 
 
-                    case "G3:G4":
+                    case "G2:G5":
 
-                        string pathRight4 = "D:\\MyApp\\CalibrationFile\\Glue_Right_G3.xml";
-                        calibration.AffineTransformation(pathRight4, "Glue_Right_G3", (float)RxPos, (float)RyPos, out var G3_X, out var G3_Y);
+                        path_L = "D:\\MyApp\\CalibrationFile\\Glue_Left_5.xml";
+                        calibration.AffineTransformation(path_L, "Glue_Left_5", (float)LxPos, (float)LyPos, out GL_X, out GL_Y);
 
-                        var resRx_G3 = G3_X + RX_offset + GxCalib;
-                        var resRy_G3 = G3_Y + RY_offset + GyCalib;
+                        resLx_P1 = GL_X + LX_P1_offset + GxCalib;
+                        resLy_P1 = GL_Y + LY_P1_offset + GyCalib;
 
-
-
-                        string pathLeft3 = "D:\\MyApp\\CalibrationFile\\Glue_Left_G4.xml";
-                        calibration.AffineTransformation(pathLeft3, "Glue_Left_G4", (float)LxPos, (float)LyPos, out var G4_X, out var G4_Y);
-
-                        var resLx_G4 = G4_X + LX_offset + GxCalib;
-                        var resLy_G4 = G4_Y + LY_offset + GyCalib;
+                        resLx_P2 = GL_X + LX_P2_offset + GxCalib;
+                        resLy_P2 = GL_Y + LY_P2_offset + GyCalib;
 
 
+                        path_R = "D:\\MyApp\\CalibrationFile\\Glue_Right_2.xml";
+                        calibration.AffineTransformation(path_R, "Glue_Right_2", (float)RxPos, (float)RyPos, out GR_X, out GR_Y);
 
-                        var res34 = new ParameterModel()
+                        resRx_P1 = GR_X + RX_P1_offset + GxCalib;
+                        resRy_P1 = GR_Y + RY_P1_offset + GyCalib;
+
+                        resRx_P2 = GR_X + RX_P2_offset + GxCalib;
+                        resRy_P2 = GR_Y + RY_P2_offset + GyCalib;
+
+
+
+                        resModel = new ParameterModel()
                         {
                             Name = Parameter.UserDefined,
                             IsRoot = true,
                             IsAddDataBind = true,
                             Children = new ObservableCollection<ParameterModel>
                             {
-                                 ParameterModel.Create(Parameter.UserDefined,"LeftX",   resLx_G4.ToString("F4"), ParameterType.Double),
-                                 ParameterModel.Create(Parameter.UserDefined,"LeftY",   resLy_G4.ToString("F4"), ParameterType.Double),
-                                 ParameterModel.Create(Parameter.UserDefined,"RightX",  resRx_G3.ToString("F4"), ParameterType.Double),
-                                 ParameterModel.Create(Parameter.UserDefined,"RightY",  resRy_G3.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Lx_P1",   resLx_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ly_P1",   resLy_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Lx_P2",   resLx_P2.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ly_P2",   resLy_P2.ToString("F4"), ParameterType.Double),
+
+                                 ParameterModel.Create(Parameter.UserDefined,"Rx_P1",   resRx_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ry_P1",   resRy_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Rx_P2",   resRx_P2.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ry_P2",   resRy_P2.ToString("F4"), ParameterType.Double),
                             }
                         };
 
-                        dataBinding.SetModel(res34);
-
-
+                        dataBinding.SetModel(resModel);
 
                         break;
+
+
+                    case "G3:G8":
+
+                        path_L = "D:\\MyApp\\CalibrationFile\\Glue_Left_8.xml";
+                        calibration.AffineTransformation(path_L, "Glue_Left_8", (float)LxPos, (float)LyPos, out GL_X, out GL_Y);
+
+                        resLx_P1 = GL_X + LX_P1_offset + GxCalib;
+                        resLy_P1 = GL_Y + LY_P1_offset + GyCalib;
+
+                        resLx_P2 = GL_X + LX_P2_offset + GxCalib;
+                        resLy_P2 = GL_Y + LY_P2_offset + GyCalib;
+
+
+                        path_R = "D:\\MyApp\\CalibrationFile\\Glue_Right_3.xml";
+                        calibration.AffineTransformation(path_R, "Glue_Right_3", (float)RxPos, (float)RyPos, out GR_X, out GR_Y);
+
+                        resRx_P1 = GR_X + RX_P1_offset + GxCalib;
+                        resRy_P1 = GR_Y + RY_P1_offset + GyCalib;
+
+                        resRx_P2 = GR_X + RX_P2_offset + GxCalib;
+                        resRy_P2 = GR_Y + RY_P2_offset + GyCalib;
+
+
+
+                        resModel = new ParameterModel()
+                        {
+                            Name = Parameter.UserDefined,
+                            IsRoot = true,
+                            IsAddDataBind = true,
+                            Children = new ObservableCollection<ParameterModel>
+                            {
+                                 ParameterModel.Create(Parameter.UserDefined,"Lx_P1",   resLx_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ly_P1",   resLy_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Lx_P2",   resLx_P2.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ly_P2",   resLy_P2.ToString("F4"), ParameterType.Double),
+
+                                 ParameterModel.Create(Parameter.UserDefined,"Rx_P1",   resRx_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ry_P1",   resRy_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Rx_P2",   resRx_P2.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ry_P2",   resRy_P2.ToString("F4"), ParameterType.Double),
+                            }
+                        };
+
+                        dataBinding.SetModel(resModel);
+
+                        break;
+
+
+                    case "G4:G7":
+
+                        path_L = "D:\\MyApp\\CalibrationFile\\Glue_Left_7.xml";
+                        calibration.AffineTransformation(path_L, "Glue_Left_7", (float)LxPos, (float)LyPos, out GL_X, out GL_Y);
+
+                        resLx_P1 = GL_X + LX_P1_offset + GxCalib;
+                        resLy_P1 = GL_Y + LY_P1_offset + GyCalib;
+
+                        resLx_P2 = GL_X + LX_P2_offset + GxCalib;
+                        resLy_P2 = GL_Y + LY_P2_offset + GyCalib;
+
+
+                        path_R = "D:\\MyApp\\CalibrationFile\\Glue_Right_4.xml";
+                        calibration.AffineTransformation(path_R, "Glue_Right_4", (float)RxPos, (float)RyPos, out GR_X, out GR_Y);
+
+                        resRx_P1 = GR_X + RX_P1_offset + GxCalib;
+                        resRy_P1 = GR_Y + RY_P1_offset + GyCalib;
+
+                        resRx_P2 = GR_X + RX_P2_offset + GxCalib;
+                        resRy_P2 = GR_Y + RY_P2_offset + GyCalib;
+
+
+                        resModel = new ParameterModel()
+                        {
+                            Name = Parameter.UserDefined,
+                            IsRoot = true,
+                            IsAddDataBind = true,
+                            Children = new ObservableCollection<ParameterModel>
+                            {
+                                 ParameterModel.Create(Parameter.UserDefined,"Lx_P1",   resLx_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ly_P1",   resLy_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Lx_P2",   resLx_P2.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ly_P2",   resLy_P2.ToString("F4"), ParameterType.Double),
+
+                                 ParameterModel.Create(Parameter.UserDefined,"Rx_P1",   resRx_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ry_P1",   resRy_P1.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Rx_P2",   resRx_P2.ToString("F4"), ParameterType.Double),
+                                 ParameterModel.Create(Parameter.UserDefined,"Ry_P2",   resRy_P2.ToString("F4"), ParameterType.Double),
+                            }
+                        };
+
+                        dataBinding.SetModel(resModel);
+
+                        break;
+
+
 
                 }
 
